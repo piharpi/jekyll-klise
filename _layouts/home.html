@@ -34,7 +34,7 @@ home: true
       <article class="list-post blog">
         <header class="list-post-header">
           <h4 class="list-post-title">
-            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}.</a>
+            <a href="{{ post.url | absolute_url }}">{{ post.title | escape }}.</a>
           </h4>
         </header>
         <section class="list-post-excerpt">
@@ -43,7 +43,7 @@ home: true
       </article>
     {% endfor %}
     <nav class="see-all-container">
-     <a class="button" href="{{ site.url }}/blog">See All</a>
+     <a class="button" href="{{ site.url | absolute_url }}/blog">See All</a>
     </nav>
   </div>
   
@@ -53,7 +53,7 @@ home: true
       <article class="list-post tips">
         <header class="list-post-header tips">
           <h4 class="list-post-title">
-            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            <a href="{{ post.url | absolute_url }}">{{ post.title | escape }}</a>
           </h4>
         </header> 
         <small class="list-meta">
@@ -67,7 +67,7 @@ home: true
       </article>
     {% endfor %}
     <nav class="see-all-container">
-        <a class="button" href="{{ site.url }}/tips">See All</a>
+        <a class="button" href="{{ site.url | absolute_url }}/tips">See All</a>
     </nav>
   </div>
 </div>

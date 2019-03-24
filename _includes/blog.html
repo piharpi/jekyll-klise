@@ -4,7 +4,7 @@
 <article class="list-post blog">
     <header class="list-post-header">
       <h2 class="list-post-title">
-        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        <a href="{{ post.url | absolute_url }}">{{ post.title | escape }}</a>
       </h2>
     </header>
     <section class="list-post-excerpt">
