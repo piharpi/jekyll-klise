@@ -2,7 +2,7 @@
   {% assign url = page.url %}
     {% if url == "/" %}
       <figure class="intro-image">
-        <img src="{{ site.author.avatar }}" alt="{{ site.author.username }}">
+        <img src="{{ site.author.avatar | absolute_url }}" alt="{{ site.author.username }}">
       </figure>
     {%endif%}
   <div class="intro-name">{{ site.title  }}</div>

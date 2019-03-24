@@ -13,7 +13,7 @@ author:
   name: Leah Rutherford
   username: piharpi
   email: justharpi@gmail.com
-  avatar: /assets/img/avatar.png
+  avatar: '/assets/img/avatar.png'
 
 # Url settings
 url: https://piharpi.github.io/bangsring
