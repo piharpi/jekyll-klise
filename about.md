@@ -19,7 +19,7 @@ Silahkan melapor jika terdapat kesalahan diblog ini melalui **[issue](https://gi
 - github.com/**piharpi** 
 - telegram.com/**piharpi**
 - twitter.com/**piharpi**
-- ![email](/assets/img/email.png), an image to avoid **spam!**
+- ![email](https://piharpi.github.io/bangsring/assets/img/email.png), an image to avoid **spam!**
 
 ##### Credits: 
 - Mountain Nature icon by [Pondok Multimedia](https://iconscout.com/icon/nature-153).
