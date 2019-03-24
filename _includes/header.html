@@ -15,9 +15,9 @@
           {% assign url = page.url%}
           {% for menu in site.data.menus %}
             {% if url == menu.url %}
-              <a class="page-link active" href="{{ menu.url }}">{{ menu.title }}</a>
+              <a class="page-link active" href="{{ menu.url | absolute_url }}">{{ menu.title }}</a>
             {% else %}
-              <a class="page-link" href="{{ menu.url }}">{{ menu.title }}</a>
+              <a class="page-link" href="{{ menu.url | absolute_url }}">{{ menu.title }}</a>
             {% endif %}
           {% endfor %}
       </div>

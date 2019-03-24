@@ -22,14 +22,9 @@ permalink: /:title
 google_analytics: UA-105586262-2
 fb_appid: 1806380839422028
 
-collections_dir: _posts
 collections:
-  blog:
+  posts:
     output: true
-    permalink: /blog/:title
-  tips:
-    output: true
-    permalink: /tips/:title
 
 # Markdown settings
 markdown: kramdown
@@ -58,12 +53,6 @@ exclude:
   - CHANGELOG.md
   - README.md
   - node_modules 
-
-# jekyll-feed plugin settings
-feed:
-  collections: 
-    - blog
-    - tips
 
 # Plugins
 plugins:

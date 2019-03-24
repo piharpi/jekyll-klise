@@ -30,7 +30,7 @@ home: true
 
   <h4 class="home-title"><span role="img" aria-label="icon-book">📘</span>blog posts</h4>
   <div class="content">
-    {% for post in site.blog limit:3 %}
+    {% for post in site.categories.blog limit:3 %}
       <article class="list-post blog">
         <header class="list-post-header">
           <h4 class="list-post-title">
@@ -49,7 +49,7 @@ home: true
   
   <h4 class="home-title"><span role="img" aria-label="icon-coffee">☕️</span>programming tips</h4>
   <div class="content">
-    {% for post in site.tips reversed limit: 3 %}
+    {% for post in site.categories.tips reversed limit: 3 %}
       <article class="list-post tips">
         <header class="list-post-header tips">
           <h4 class="list-post-title">
