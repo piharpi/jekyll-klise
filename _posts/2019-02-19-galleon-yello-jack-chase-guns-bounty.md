@@ -2,8 +2,8 @@
 title: How to Clear Nunjucks Cache
 date: 2019-02-19 11:45:47 +07:00
 modified: 2019-02-20 11:45:47 +07:00
+category: tips
 tags: [nonjuck, cache, pug, flores, static-site]
-layout: post
 ---
 I’m building a static site generator (again) named [Flores](). Initially, I use [Pug]() for the templating engine. But then I discovered [Nunjucks](). It has a lot more features and the syntax is quite similar to [Twig]() which I’m familiar with. I also did a quick test and the render time is quite similar when the cache option is activated.
 

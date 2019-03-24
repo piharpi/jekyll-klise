@@ -1,10 +1,10 @@
 ---
 title: How to name Sass color variables
 date: 2018-11-18 11:45:47 +07:00
+modified: 2019-02-20 11:45:47 +07:00
+categories: tips
 tags: [css, sass, naming-variables]
-layout: post
-comment: true
-thumbnail: https://source.unsplash.com/FWCUZqXCrUs/800x480
+image: https://source.unsplash.com/FWCUZqXCrUs/800x480
 ---
 
 When it comes to naming Sass variables, I suck. I think I've found the perfect solution, get half way through a project, and realise what a terrible mistake I'd made.

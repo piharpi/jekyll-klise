@@ -1,9 +1,10 @@
 ---
 title: React Component with Dot Notation
 date: 2019-02-19 11:45:47 +07:00
+modified: 2019-02-20 11:45:47 +07:00
+categories: tips
 tags: [react, javascript, dot-notation]
-layout: post  
-thumbnail: https://media.giphy.com/media/dIxkmtCuuBQuM9Ux1E/200w_d.gif
+image:
 ---
 
 This is my answer to someone’s question on [StackOverflow](https://stackoverflow.com/questions/49256472/react-how-to-extend-a-component-that-has-child-components-and-keep-them/49258038#answer-49258038). How can we define a React component that is accessible through the dot notation?

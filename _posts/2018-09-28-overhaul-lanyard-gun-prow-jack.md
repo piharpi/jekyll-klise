@@ -1,8 +1,10 @@
 ---
 title: Overhaul lanyard gun prow jack 
 date: 2018-09-28 09:45:47 +07:00
+modified: 2019-02-20 11:45:47 +07:00
+categories: blog
 tags: [story, antagonist]
-thumbnail: "/assets/img/posts/devc-yogya-28-09-2018s.jpg"
+image: "/assets/img/posts/devc-yogya-28-09-2018s.jpg"
 ---
 
 Once upon a time, there was a little boy whose name was Alex he oftern visited his aunt, and she always

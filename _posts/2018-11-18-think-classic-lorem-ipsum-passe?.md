@@ -1,8 +1,10 @@
 ---
 title: Think classic lorem ipsum is passé?
 date: 2018-11-18 11:38:47 +07:00
+modified: 2019-02-20 11:45:47 +07:00
+categories: blog
 tags: [demo, bangsring, jekyll, github-pages]
-thumbnail: https://source.unsplash.com/FWCUZqXCrUs/800x480 # for open graph image / seo image 
+image: https://source.unsplash.com/FWCUZqXCrUs/800x480 # for open graph image / seo image 
 tweet: 1106842621706563584
 ---
 Pommy ipsum manky odds and sods tallywhacker up North a bit miffed, her Majesty's pleasure had a barney with the inlaws blimey have a gander jammy git a cuppa fried toast, well chuffed duck nick flabbergasted easy peasy Dalek and. On the pull yorkshire mixture Sherlock pennyboy bloke.
