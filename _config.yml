@@ -16,7 +16,7 @@ author:
   avatar: /assets/img/avatar.png
 
 # Url settings
-url: https://piharpi.github.io/bangsring/
+url: https://piharpi.github.io/bangsring
 baseurl: ""
 permalink: /:title
 google_analytics: UA-105586262-2
