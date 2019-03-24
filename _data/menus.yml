@@ -2,13 +2,13 @@
   url   : /
 
 - title : Blog
-  url   : /blog/
+  url   : /blog
 
 - title : Tips
-  url   : /tips/
+  url   : /tips
 
 - title : About 
-  url   : /about/
+  url   : /about
 
 - title : RSS 
-  url   : /feed.xml/
+  url   : /feed.xml
