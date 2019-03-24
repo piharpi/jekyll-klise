@@ -42,7 +42,7 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: post
-      image: /assets/img/piharpi.png
+      image: /assets/img/avatar.png
 
 # Build settings
 sass:
