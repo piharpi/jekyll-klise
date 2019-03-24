@@ -5,7 +5,7 @@
     {% for post in site.tags[tag_name] %}
     <article class="list-post tips">
       <header class="list-post-header tips">
-          <h2 class="list-post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+          <h2 class="list-post-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
       </header>
       <small class="list-post-meta tips-time">
           <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.categories | first | capitalize }}</time>
