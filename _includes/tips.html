@@ -1,0 +1,20 @@
+<h4 class="home-title"><span role="img" aria-label="coffee">☕️</span>programming tips</h4>
+<div class="content">
+  {% for post in site.tips %}
+  <article class="list-post tips">
+    <header class="list-post-header tips">
+      <h2 class="list-post-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </h2>
+    </header> 
+    <small class="list-meta">
+        {% if post.tags != empty %}
+            {% assign tags = post.tags %}
+            {% for tag in tags %}
+              <a class="tag" href="{{site.url}}/tags/#{{tag | downcase | slugify}}">{{tag | downcase }}</a>{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+       {% endif %}
+    </small>
+  </article>
+  {% endfor %}
+</div>

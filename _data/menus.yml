@@ -1,0 +1,14 @@
+- title : Home
+  url   : /
+
+- title : Blog
+  url   : /blog/
+
+- title : Tips
+  url   : /tips/
+
+- title : About 
+  url   : /about/
+
+- title : RSS 
+  url   : /feed/

@@ -1,0 +1,16 @@
+{% for tag in site.tags %}
+  {% capture tag_name %}{{ tag | first }}{% endcapture %}
+  <h4 class="home-title" id="{{ tag_name | downcase | slugify }}" class="category-head">{{ tag_name }}</h4>
+  <div class="content">
+    {% for post in site.tags[tag_name] %}
+    <article class="list-post tips">
+      <header class="list-post-header tips">
+          <h2 class="list-post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      </header>
+      <small class="list-post-meta tips-time">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.categories | first | capitalize }}</time>
+      </small>
+    </article>
+    {% endfor %}
+  </div>
+{% endfor %}

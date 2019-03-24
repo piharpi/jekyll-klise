@@ -1,0 +1,144 @@
+/**
+ * Post title
+ */
+.post-header {
+    .post-title {
+      font-size: $small-font-size;
+      font-weight: 700;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+}
+
+/**
+ * Post meta 
+ */
+.post-meta {
+  color: $grey;
+  font-size: $small-font-size;
+  margin-bottom: 1em;
+}
+
+/**
+ * Post content
+ */
+.post-content {
+  font-size: $base-font-size;
+  color: $black;
+  line-height: 27px;
+  padding: 5px 0 0 0;
+  
+  iframe {
+    text-align: center;
+  }
+
+  > p {
+    margin: 0;
+    padding-top: $spacing-unit - 20;
+    padding-bottom: $spacing-unit - 20;
+  }
+
+  ul.task-list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    li input[type="checkbox"]{
+      margin-right: 10px;
+    }
+  }
+
+  dl dt {
+    font-weight: 700;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $black;
+    font-weight: 700;
+    margin-top: $spacing-unit;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    @include relative-font-size(1.750);
+    
+    // Use this media queries like this, if you want responsive font
+    // @include media-query($on-laptop) {
+    //   @include relative-font-size(1.75);
+    // }
+  }
+
+  h2 {    
+    @include relative-font-size(1.563);
+  }
+
+  h3 {
+    @include relative-font-size(1.438);
+    border-bottom: 1px solid $light;
+    padding-bottom: 4px;
+  }
+
+  h4 {
+    @include relative-font-size(1.188);
+  }
+
+  h5 {
+    @include relative-font-size(1);
+  }
+
+  h6 {
+    @include relative-font-size(.875);
+  }
+
+  ul a, ol a
+  {
+    border-bottom: 1px dashed #d2c7c7;
+    &:hover {
+      border-bottom: 2px solid #1635de;      
+    }
+  }
+}
+
+
+hr {
+  border-bottom:0;
+  border-style: solid;
+  border-color: $light;
+}
+
+.post-nav {
+  display: flex;
+  position: relative;
+  margin-top: 5em;
+  border-top: 1px solid $light;
+
+  .post-nav-item {
+      border-bottom: 0;       
+      font-weight: 800;
+      padding-bottom: 10px;
+      &:hover, &:focus {
+        h4 {
+          color: $blue;
+        }
+      }
+      h4 {
+        color: $grey;
+        font-size: $small-font-size;
+        margin: 0;
+      }
+      width: 50%;
+      padding-top: 10px;
+      text-decoration: none;
+      box-sizing: border-box;
+      &:nth-child(odd) {
+          padding-left: 0;
+          padding-right: 20px;
+      }
+      &:nth-child(even) {
+          text-align: right;
+          padding-right: 0;
+          padding-left: 20px;
+      }
+  }
+}

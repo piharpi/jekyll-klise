@@ -1,5 +1,5 @@
-# Bangsring 
-​	Adalah tema jekyll minimalis, ringan dan responsive, sempurna untuk Personal site juga blog anda, membuat diri anda seperti orang  professional,  bisa dijankan melalui [Github Pages](https://pages.github.com/), [Netlify](https://www.netlify.com/), maupun server sendiri,  anda juga bisa menyesuaikan tema ini dengan mengedit kode sumber, cukup untuk perkenalanya, klik untuk [demo](https://piharpi.github.io/bangsring).
+# Bangsring Jekyll Theme
+Adalah tema jekyll minimalis, ringan dan responsive, sempurna untuk Personal site juga blog anda, membuat diri anda seperti orang  professional,  bisa dijankan melalui [Github Pages](https://pages.github.com/), [Netlify](https://www.netlify.com/), maupun server sendiri,  anda juga bisa menyesuaikan tema ini dengan mengedit kode sumber, cukup untuk perkenalanya.
 
 
 
@@ -10,7 +10,6 @@ GAMBAR RESPONSIVE(DESKTOP, TAB, MOBILE) DISINI
 ## Fitur Penting
 
 - Tentu responsive dialat apapun.
-
 - Tampilan yang nyaman dibaca, tidak merusak matamu. 
 - Compatible dengan browser tua i.e: Internet Explorer.
 - Compatible dengan Github Pages and Netlify. 
@@ -18,6 +17,8 @@ GAMBAR RESPONSIVE(DESKTOP, TAB, MOBILE) DISINI
 - Google Analystics support.
 - Commenting support powered by Disqus(optional).
 - Optimized for search engines with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data
+
+## Demo
 
 
 
@@ -31,36 +32,48 @@ Directory Structure
 bangsring
 ├── _data                      # data files for customizing the theme
 |  ├── menus.yml          	   # navigation links
-|  └── projects.yml            # list projects
+|  └── projects.yml            # list your projects
+├── _drafts                    # drafts folder
 ├── _includes
-|  ├── analytics-providers     # snippets for analytics (Google and custom)
-|  ├── comments-providers      # snippets for comments
-|  ├── toc                     # table of contents helper
-|  └── ...
+|  ├── blog.html               # snippets for analytics (Google and custom)
+|  ├── cover.html              # snippets for comments
+|  ├── disqus_comment.html     # snippets for comments
+|  ├── footer.html             # snippets for comments
+|  ├── head.html               # snippets for comments
+|  ├── header.html             # snippets for comments
+|  ├── pagination.html         # snippets for comments
+|  ├── post-nav.html           # snippets for comments
+|  ├── tags.html               # snippets for comments
+|  └── tips.html               # snippet o
 ├── _layouts
-|  ├── page.html   # tag/category archive for Jekyll Archives plugin
-|  ├── blog.html            # archive base
-|  ├── tags.html               # archive listing posts grouped by tags
-|  └── category.html             # splash page
+|  ├── 404.html                # tag/category archive for Jekyll Archives plugin
+|  ├── compress.html           # archive base
+|  ├── default.html            # archive base
+|  ├── home.html               # archive base
+|  ├── page.html               # archive base
+|  └── post.html               # splash page
 ├── _sass                      # SCSS partials
 ├── assets
 |  ├── css
 |  |  └── style.scss           # main stylesheet, loads SCSS partials from _sass
 |  ├── image                   # image assets for posts/pages/collections/etc.
-|  |  ├── posts				   #
-|  |  ├── logo.jpg	
+|  |  ├── posts				         
+|  |  |  ├── blog	
+|  |  |  └── tips              # main stylesheet, loads SCSS partials from _sass
+|  |  └── avatar.png           # main stylesheet, loads SCSS partials from _sass
 |  ├── js
-|  |  ├── plugins              # jQuery plugins
-|  |  ├── vendor               # vendor scripts
-|  |  ├── _main.js             # plugin settings and other scripts to load after jQuery
-|  |  └── main.min.js          # optimized and concatenated script file loaded before 
+|  |  ├── disqus.js            # plugin settings and other scripts to load after jQuery
+|  |  └── galite.js            # optimized and concatenated script file loaded before 
 ├── _config.yml                # site configuration
 ├── Gemfile                    # gem file dependencies
-├── index.html                 # paginated home page showing recent posts
+├── 404.md                     # paginated home page showing recent posts
+├── about.md                   # paginated home page showing recent posts
+├── blog.md                    # paginated home page showing recent posts
+├── index.md                   # paginated home page showing recent posts
+├── tags.md                    # paginated home page showing recent posts
+├── tips.md                    # paginated home page showing recent posts
 └── package.json               # NPM build scripts
 ```
-
-
 
 ## Berkontribusi
 
@@ -84,19 +97,4 @@ Theme documentation and demo pages can be found in the [`/docs`](https://github.
 
 ## License
 
-MIT License
-
-Copyright (c) 2019 Mahendrata Harpi
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+MIT License 

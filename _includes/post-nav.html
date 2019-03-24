@@ -1,0 +1,14 @@
+<aside class="post-nav">
+  {% if page.previous %}
+    <a class="post-nav-item post-nav-prev" href="{{ page.previous | relative_url }}">
+      <h4>Previous</h4>
+      <span>{{ page.previous.title }}</span>
+    </a>
+  {% endif %}
+  {% if page.next %}
+    <a class="post-nav-item post-nav-next" href="{{ page.next | relative_url }}">
+      <h4>Next</h4>
+      <span>{{ page.next.title }}</span>
+    </a>
+  {% endif %}
+</aside>
