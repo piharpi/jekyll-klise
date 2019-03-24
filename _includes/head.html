@@ -49,8 +49,10 @@
   <meta name="twitter:image" content="{{ site.image | absolute_url }}">
   {% endif %}
   {% feed_meta %}
-  <link rel="shortcut icon" type="image/png" sizes="32x32" href="{{ site.icon | absolute_url }}"/>
-  <link rel="apple-touch-icon" href="{{ site.icon | absolute_url }}">
+  <link rel="icon" href="{{ site.icon | absolute_url }}" type="image/x-icon"/>
+  <link rel="shortcut icon" href="{{ site.icon | absolute_url }}" type="image/x-icon"/>
+
+  <link rel="apple-touch-icon" href="{{ site.icon }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | absolute_url }}">
   <script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
