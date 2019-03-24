@@ -18,7 +18,7 @@ author:
 # Url settings
 url: https://piharpi.github.io/bangsring
 baseurl: ""
-permalink: /:title
+permalink: /:categories/:title
 google_analytics: UA-105586262-2
 fb_appid: 1806380839422028
 
@@ -34,7 +34,7 @@ syntax_highlighter: rouge
 defaults:
   -
     scope:
-      path: "" # an empty string here means all files in the project
+      path: ""
     values:
       layout: post
       image: /assets/img/avatar.png
@@ -53,7 +53,9 @@ exclude:
   - CHANGELOG.md
   - README.md
   - node_modules 
-
+  - bangsring.gemspec
+  - CODE_OF_CONDUCT.md
+  
 # Plugins
 plugins:
   - jekyll-feed
