@@ -6,14 +6,25 @@ html {
   width: 100%;
 }
 
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  letter-spacing: .1px;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
-  font-family: $base-font-family;
 }
 
 /**
@@ -21,46 +32,63 @@ dl, dd, ol, ul, figure {
  */
 body {
   min-height: 100vh;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   position: relative;
-  background: $neutral;
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  background: $base;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $second-font-family;
   -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
+  -webkit-font-feature-settings: "kern"1;
+  -moz-font-feature-settings: "kern"1;
+  -o-font-feature-settings: "kern"1;
+  font-feature-settings: "kern"1;
   font-kerning: normal;
+  border-top: 5px solid $black;
+  box-sizing: border-box;
+
+  @include media-query($on-mobile) {
+    $base-font-size: 18px;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $second-font-family;
+  }
 }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
 %vertical-rhythm {
   margin-top: $spacing-unit - 20;
   margin-bottom: $spacing-unit - 20;
 }
 
 kbd {
-  -moz-border-radius:3px;
-  -moz-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px $white inset;
-  -webkit-border-radius:3px;
-  -webkit-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px $white inset;
-  background-color:#f7f7f7;
-  border:1px solid #ccc;
-  border-radius:3px;
-  box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px $white inset;
-  color:#333;
-  display:inline-block;
-  font-family: Roboto;
-  font-size:14px;
-  line-height:1.4;
-  margin:0 .1em;
-  padding:.1em .6em;
-  text-shadow:0 1px 0 $white;
+  -moz-border-radius: 3px;
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px $white inset;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px $white inset;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px $white inset;
+  color: #333;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: $syntax-font-family;
+  margin: 0 .1em;
+  padding: .1em .6em;
+  text-shadow: 0 1px 0 $white;
 }
 
 /**
@@ -70,6 +98,8 @@ img {
   max-width: 100%;
   vertical-align: middle;
   -webkit-user-drag: none;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /**
@@ -83,7 +113,7 @@ figure {
 /**
  * Images
  */
-figure > img {
+figure>img {
   display: block;
   position: relative;
 }
@@ -99,15 +129,17 @@ figcaption {
 /**
  * Lists
  */
-ul, ol {
-  margin-left: $spacing-unit;
+ul,
+ol {
+  margin-left: $spacing-unit - 10;
 }
 
 li {
   padding-bottom: 1px;
   padding-top: 1px;
-  > ul,
-  > ol {
+
+  >ul,
+  >ol {
     margin-bottom: 2px;
     margin-top: 0;
   }
@@ -116,13 +148,24 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: $base-font-weight;
 }
 
-h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+h1>a,
+h2>a,
+h3>a,
+h4>a,
+h5>a,
+h6>a {
   text-decoration: none;
   border: none;
+
   &:hover {
     text-decoration: none;
     border: none;
@@ -135,12 +178,12 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
  */
 a {
   color: $black;
-  border-bottom: 1px solid #1635de;
+  border-bottom: 1px solid $smoke;
   text-decoration: none;
 
   &:hover {
     color: $black;
-    border-bottom: 2px solid #1635de;
+    border-bottom: 2px solid $blue;
   }
 }
 
@@ -155,18 +198,23 @@ del {
  * Em
  */
 em {
-  color:inherit;
+  color: inherit;
 }
 
 /**
  * Blockquotes
  */
 blockquote {
-  color: $grey;
-  border-left: 4px solid $black;
-  padding: 5px 5px 5px 15px;
-  border-radius: 2px;
-  @include relative-font-size(1);
+  color: $gray;
+  font-style: italic;
+  text-align: center;
+  opacity: .9;
+  border-top: 1px solid $light;
+  border-bottom: 1px solid $light;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1em;
 
   > :last-child {
     margin-bottom: 0;
@@ -179,7 +227,7 @@ blockquote {
  */
 .wrapper {
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
   position: relative;
   margin-right: auto;
   margin-left: auto;
@@ -187,14 +235,32 @@ blockquote {
   padding-left: $spacing-unit;
   @extend %clearfix;
 
-  @include media-query($on-laptop) {
+  @include media-query($on-mobile) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: $spacing-unit - 10;
+    padding-left: $spacing-unit - 10;
   }
 }
 
+/**
+ * Small
+ */
+small {
+  font-size: 16px;
+}
+
+/**
+ * Superscript
+ */
+sup {
+  padding: 0px 4px;
+  border-radius: 10%;
+  top: -3px;
+  left: 2px;
+  font-size: small;
+  position: relative;
+}
 
 /**
  * Table
@@ -203,13 +269,19 @@ table {
   margin: 0 auto;
   border-collapse: collapse;
   background: $white;
-  font-family: 'Roboto Mono';
+  font-family: $first-font-family;
   font-size: $small-font-size;
-  th { 
-    font-weight: 400;
+
+  th {
+    font-weight: 700;
     background: #f5f5f5;
+    text-align: left;
+    border-bottom: 2px solid #f5f5f5;
   }
-  th, td, tr {
+
+  th,
+  td,
+  tr {
     border: 1px solid $light;
     padding: 4px 8px;
   }
@@ -228,7 +300,7 @@ table {
  * When mouse block a text set this color
  */
 ::selection {
-    background: #D6EDFF;
+  // background: transparent;
 }
 
 /**
@@ -237,7 +309,9 @@ table {
 .gist {
   table {
     border: 0;
-    tr, td {
+
+    tr,
+    td {
       border: 0;
     }
   }

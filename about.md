@@ -1,25 +1,21 @@
 ---
-title: About bangsring theme
+title: Colophon
 permalink: /about/
-excerpt: this is for page description
+layout: page
+excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in Jogjakarta. This blog for documentation about my programming journey, running on jekyll, hosting on netlify and using my own simple theme.
+comments: false
 ---
-Website ini untuk mendokumentasikan 🎒 petualangan saya didunia pemprograman, Blog ini berjalan menggunakan jekyllrb.com, yang dihosting melalui netlify.com dan menggunakan tema [Bangsring](http://github.com/piharpi/bangsring) terdapat beberapa progress untuk blog ini :
 
-- [ ] Social link icon.
-- [ ] Night mode Theme.
-- [ ] Nambahin HTML microdata.
-- [ ] Rapihin file ``.scss``.
-- [ ] ``<h1>`` - ``<h6>`` anchor hover.
-- [ ] Tags.
-<!-- flexible image layouts = menyesuaikan tata letak gambar sendiri jika banyak gambar yang di upload -->
+Hello peeps, I'm student of computer science from Banyuwangi, living in Jogjakarta. This blog for documentation about my programming 🎒 journey, running on jekyll, hosting on netlify and using my [own](http://github.com/piharpi/bangsring) simple theme.
 
-Silahkan melapor jika terdapat kesalahan diblog ini melalui **[issue](https://github.com/piharpi/me/issues/new?template=bug_report.md)** github.
+Day to day use Ruby, Javascript and doing fun with HTML/CSS, Ruby on Rails is my fav framework right now, i also willingness to learn another web technology; but i often forgot 🌚. If you have a question about me or else, letter to me.
 
-### 🎈 Find me 
-- github.com/**piharpi** 
-- telegram.com/**piharpi**
-- twitter.com/**piharpi**
-- ![email](https://piharpi.github.io/bangsring/assets/img/email.png), an image to avoid **spam!**
+You can **[report](https://github.com/piharpi/me/issues/new?template=bug_report.md)** if there is an broken link(s) or somethings else.
 
-##### Credits: 
-- Mountain Nature icon by [Pondok Multimedia](https://iconscout.com/icon/nature-153).
+_22 August 2019, Harpi_
+
+### Further information
+
+- [resume](<javascript::void(0)>) _(soon)_
+- justharpi[at]gmail[dot]com
+- github.com/piharpi

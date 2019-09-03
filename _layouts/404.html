@@ -4,18 +4,58 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en " }}">
-
 {% include head.html %}
+<style>
+body {
+  border: 0;
+}
 
+.wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 75vh;
+}
+
+.title {
+  font-size: 5em;
+  font-weight: bold;
+  font-family: 'Fira Code';
+  line-height: 1.1;
+  color: #ff5555;
+  text-shadow: 1px 0px 0px#b45151;
+}
+
+.phrase {
+  color: gray;
+}
+
+.solution {
+  border-radius: 4em 1em 2em 1em / 1em 5em 1em 3em;
+  color: #0036c7;
+  background: #ebebeb;
+  font-family: 'Roboto';
+  line-height: 1.188;
+  text-decoration: none;
+  padding: 5px 8px;
+  border: 0;
+  font-size: 15.625px;
+  letter-spacing: 0.5px;
+}
+
+.solution:hover {
+  border: 0;
+}
+</style>
 <body>
   <main aria-label="Content">
-    <div class="wrapper">            
-      <div class="er-wrapper">
-        <div class="er-container">
-          <h1 class="er-header">404 — </h1>
-          <p class="er-paragraph">Hmm... Seems like you lost from my journey 🎒 .</p>
-          <p class="er-by">Don't worry you can back to trip <a href="{{ site.url }}">right now</a>.</p>              
-        </div>
+    {% include navbar.html %}
+    <div class="wrapper">
+      <div class="container">
+        <div class="title">404</div>
+        <p class="phrase">Hmm... Seems you lost from my 🎒 journey.</p>
+        <a class="solution" href="{{ site.url }}">home</a>
       </div>
     </div>
   </main>

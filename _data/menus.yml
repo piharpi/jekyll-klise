@@ -1,14 +1,8 @@
-- title : Home
-  url   : /
+- title: Home
+  url: /
 
-- title : Blog
-  url   : /blog
+- title: About
+  url: /about/
 
-- title : Tips
-  url   : /tips
-
-- title : About 
-  url   : /about
-
-- title : RSS 
-  url   : /feed.xml
+- title: RSS
+  url: /feed.xml/

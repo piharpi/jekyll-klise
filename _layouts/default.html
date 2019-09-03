@@ -8,13 +8,14 @@ layout: compress
 {% include head.html %}
 
 <body>
-    <div class="wrapper">
-    {% include cover.html %}
+  {% include navbar.html %}
+  <div class="wrapper">
+    {% include jumbotron.html %}
     <main aria-label="Content">
-            {{ content }}
+      {{ content }}
     </main>
     {% include footer.html %}
-    </div>
+  </div>
 </body>
 
 </html>

@@ -1,50 +1,64 @@
 # Site settings
-title: Leah Rutherford
-projects: true # false to hide my work
-description:  >-
-  Turpis egestas integer eget aliquet nibh praesent tristique magna sit amet 
-  purus gravida quis blandit turpis cursus in hac habitasse platea <a href="#">dictumst</a> quisque sagittis.
+title: Mahendrata Harpi 🇮🇩
+description: >-
+  this blog is place where i'm writing about web technology 
+  what i like and as journal for documentation things what i learned, meet me <a href="https://github.com/piharpi" target="_blank">@github</a>.
 lang: en-US
 timezone: Asia/Jakarta
-icon: favicon.ico
+icon: "favicon.ico"
 
 # User settings
-author: 
-  name: Leah Rutherford
+author:
+  name: Mahendrata Harpi
   username: piharpi
   email: justharpi@gmail.com
-  avatar: '/assets/img/avatar.png'
+  avatar: "/assets/img/avatar.jpg"
 
 # Url settings
-url: https://piharpi.github.io/bangsring
+url: https://piharpi.com
 baseurl: ""
-permalink: /:categories/:title
-google_analytics: UA-105586262-2
-fb_appid: 1806380839422028
+permalink: blog/:categories/:title/
+google_analytics: UA-105586262-1
+fb_appid: ""
 
+# Collection setting
 collections:
   posts:
     output: true
 
 # Markdown settings
 markdown: kramdown
-syntax_highlighter: rouge
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
 
 # Default front matter
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       layout: post
-      image: /assets/img/avatar.png
+      comments: false
+
+# Jekyll Compose default front matter
+jekyll_compose:
+  post_default_front_matter:
+    modified:
+    tags: []
+    description:
+  draft_default_front_matter:
+    modified:
+    tags: []
+    description:
 
 # Build settings
 sass:
   style: compressed
+
 include:
   - _redirects
   - .htaccess
+
 exclude:
   - CNAME
   - Gemfile
@@ -52,10 +66,10 @@ exclude:
   - LICENSE
   - CHANGELOG.md
   - README.md
-  - node_modules 
+  - node_modules
   - bangsring.gemspec
   - CODE_OF_CONDUCT.md
-  
+
 # Plugins
 plugins:
   - jekyll-feed
