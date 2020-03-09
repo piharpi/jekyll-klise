@@ -1,8 +1,16 @@
-- title: Home
+- title: home
   url: /
+  external: false
 
-- title: About
+- title: about
   url: /about/
+  external: false
 
-- title: RSS
-  url: /feed.xml/
+- title: notes
+  url: /notes/
+  external: false # set true if you using external link, see bellow
+
+# Example:
+# - title: github
+#   url: https://github.com/piharpi/jekyll-klise
+#   external: true

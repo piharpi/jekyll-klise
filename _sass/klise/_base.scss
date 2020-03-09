@@ -1,0 +1,339 @@
+// Reset some basic elements
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+// Basic styling
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  color: $text-base-color;
+  background-color: $white;
+  font: $normal-weight #{$base-font-size}/#{$base-line-height} $sans-family;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  box-sizing: border-box;
+}
+
+// Set `margin-bottom` to maintain vertical rhythm
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
+%vertical-rhythm {
+  margin-top: $spacing-full - 20;
+  margin-bottom: $spacing-full - 20;
+}
+
+// strong | bold
+strong,
+b {
+  font-weight: $bold-weight;
+  color: $black;
+}
+
+// horizontal rule
+hr {
+  border-bottom: 0;
+  border-style: solid;
+  border-color: $light;
+}
+
+// kbd tag
+kbd {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border: 1px solid $light;
+  border-radius: 2px;
+  color: $black;
+  display: inline-block;
+  font-size: $small-font-size;
+  line-height: 1.4;
+  font-family: $mono-family;
+  margin: 0 0.1em;
+  font-weight: $bold-weight;
+  padding: 0.01em 0.4em;
+  text-shadow: 0 1px 0 $white;
+}
+
+// Image
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  -webkit-user-drag: none;
+  margin: 0 auto;
+  text-align: center;
+}
+
+// Figure
+figure {
+  position: relative;
+}
+
+// Image inside Figure tag
+figure > img {
+  display: block;
+  position: relative;
+}
+
+// Image caption
+figcaption {
+  font-size: 13px;
+  text-align: center;
+}
+
+// List
+ul {
+  list-style: none;
+  li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+  }
+  li::before {
+    content: "\03BB";
+    display: inline-block;
+    width: 1em;
+    position: relative;
+    margin-left: -1em;
+    font-weight: $bold-weight;
+  }
+}
+
+ol {
+  list-style: none;
+  counter-reset: li;
+  li {
+    position: relative;
+    counter-increment: li;
+    &::before {
+      content: counter(li);
+      display: inline-block;
+      width: 1em;
+      margin-right: 0.5em;
+      margin-left: -1.6em;
+      text-align: right;
+      direction: rtl;
+      font-weight: $bold-weight;
+      font-size: $small-font-size;
+    }
+  }
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-left: $spacing-full;
+}
+
+li {
+  padding-bottom: 1px;
+  padding-top: 1px;
+
+  &:before {
+    color: $black;
+  }
+
+  > ul,
+  > ol {
+    margin-bottom: 2px;
+    margin-top: 0;
+  }
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+  font-weight: $bold-weight;
+  & + ul,
+  & + ol {
+    margin-top: 10px;
+  }
+}
+
+// Headings with link
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  text-decoration: none;
+  border: none;
+
+  &:hover {
+    text-decoration: none;
+    border: none;
+  }
+}
+
+// Link
+a {
+  color: inherit;
+  text-decoration-color: $smoke;
+
+  &:hover {
+    color: $text-link-blue;
+  }
+
+  &:focus {
+    outline: 3px solid rgba(0, 54, 199, 0.6);
+    outline-offset: 2px;
+  }
+}
+
+// Del
+del {
+  color: inherit;
+}
+
+// Em
+em {
+  color: inherit;
+}
+
+// Blockquotes
+blockquote {
+  color: $gray;
+  font-style: italic;
+  text-align: center;
+  opacity: 0.9;
+  border-top: 1px solid $light;
+  border-bottom: 1px solid $light;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1em;
+
+  > :last-child {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+// Wrapper
+.wrapper {
+  max-width: -webkit-calc(#{$narrow-size} - (#{$spacing-full} * 2));
+  max-width: calc(#{$narrow-size} - (#{$spacing-full} * 2));
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-full;
+  padding-left: $spacing-full;
+  @extend %clearfix;
+
+  @include media-query($on-mobile) {
+    max-width: -webkit-calc(#{$narrow-size} - (#{$spacing-full}));
+    max-width: calc(#{$narrow-size} - (#{$spacing-full}));
+    padding-right: $spacing-full - 10;
+    padding-left: $spacing-full - 10;
+  }
+}
+
+// Underline
+u {
+  text-decoration-color: #d2c7c7;
+}
+
+// Small
+small {
+  font-size: $small-font-size;
+}
+
+// Superscript
+sup {
+  border-radius: 10%;
+  top: -3px;
+  left: 2px;
+  font-size: small;
+  position: relative;
+  margin-right: 2px;
+}
+
+// Table
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: $white;
+  font-size: $small-font-size;
+
+  th {
+    font-weight: $bold-weight;
+    background: #f5f5f5;
+    text-align: left;
+    border-bottom: 2px solid #f5f5f5;
+  }
+
+  th,
+  td,
+  tr {
+    border: 1px solid $light;
+    padding: 4px 8px;
+  }
+}
+
+// Clearfix
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// When mouse block a text set this color
+mark,
+::selection {
+  background: #fffba0;
+  color: $black;
+}
+
+// Github Gist clear border
+.gist {
+  table {
+    border: 0;
+
+    tr,
+    td {
+      border: 0;
+    }
+  }
+}

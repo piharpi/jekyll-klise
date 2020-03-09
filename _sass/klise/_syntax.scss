@@ -1,0 +1,181 @@
+// Code
+code {
+  font-family: $mono-family;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "calt" 1;
+  font-variant-ligatures: normal;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  font-size: 16px;
+  &.highlighter-rouge {
+    padding: 1px 4px;
+    position: relative;
+    top: -1px;
+    background-color: #f6f6f6;
+    border-radius: 2px;
+  }
+}
+
+// Codeblock Theme
+pre.highlight {
+  margin: 0 -27px;
+  @include media-query($on-mobile) {
+    margin: 0 calc(51% - 51vw);
+    padding-left: 20px;
+  }
+  border-radius: 2px;
+  padding: 10px;
+  display: block;
+  overflow-x: auto;
+
+  > code {
+    width: 100%;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    display: block;
+    border: 0;
+  }
+}
+
+.highlight table td {
+  padding: 5px;
+}
+
+.highlight table pre {
+  margin: 0;
+}
+
+.highlight,
+.highlight .w {
+  color: #fbf1c7;
+  background-color: #1a1b21;
+}
+
+.highlight .err {
+  color: #fb4934;
+  background-color: #1a1b21;
+  font-weight: bold;
+}
+
+.highlight .c,
+.highlight .cd,
+.highlight .cm,
+.highlight .c1,
+.highlight .cs {
+  color: #928374;
+  font-style: italic;
+}
+
+.highlight .cp {
+  color: #8ec07c;
+}
+
+.highlight .nt {
+  color: #fb4934;
+}
+
+.highlight .o,
+.highlight .ow {
+  color: #fbf1c7;
+}
+
+.highlight .p,
+.highlight .pi {
+  color: #fbf1c7;
+}
+
+.highlight .gi {
+  color: #b8bb26;
+  background-color: #282828;
+}
+
+.highlight .gd {
+  color: #fb4934;
+  background-color: #282828;
+}
+
+.highlight .gh {
+  color: #b8bb26;
+  font-weight: bold;
+}
+
+.highlight .k,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kv {
+  color: #fb4934;
+}
+
+.highlight .kc {
+  color: #d3869b;
+}
+
+.highlight .kt {
+  color: #fabd2f;
+}
+
+.highlight .kd {
+  color: #fe8019;
+}
+
+.highlight .s,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .sh,
+.highlight .sx,
+.highlight .s1 {
+  color: #b8bb26;
+  font-style: italic;
+}
+
+.highlight .si {
+  color: #b8bb26;
+  font-style: italic;
+}
+
+.highlight .sr {
+  color: #b8bb26;
+  font-style: italic;
+}
+
+.highlight .se {
+  color: #fe8019;
+}
+
+.highlight .nn {
+  color: #8ec07c;
+}
+
+.highlight .nc {
+  color: #8ec07c;
+}
+
+.highlight .no {
+  color: #d3869b;
+}
+
+.highlight .na {
+  color: #b8bb26;
+}
+
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .il,
+.highlight .mo,
+.highlight .mb,
+.highlight .mx {
+  color: #d3869b;
+}
+
+.highlight .ss {
+  color: #83a598;
+}

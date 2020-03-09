@@ -1,25 +1,30 @@
 # Site settings
-title: Mahendrata Harpi 🇮🇩
+title: Klise Theme
 description: >-
-  this blog is place where i'm writing about web technology 
-  what i like and as journal for documentation things what i learned, meet me <a href="https://github.com/piharpi" target="_blank">@github</a>.
+  He's writing in Bahasa about web technology and experience as a journal 
+  for documentation things that he learned, meet him <a href="https://github.com/piharpi" target="_blank" rel="noopener">@github</a>.
 lang: en-US
 timezone: Asia/Jakarta
-icon: "favicon.ico"
+image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
+repo: https://github.com/piharpi/mahendrata.now.sh
+mode: dark # default theme "dark" | "light"
 
-# User settings
+# Profile settings
 author:
-  name: Mahendrata Harpi
-  username: piharpi
-  email: justharpi@gmail.com
-  avatar: "/assets/img/avatar.jpg"
+  name: Klisé Theme
+  bio: >-
+    He's writing in Bahasa about web technology and experience as a journal 
+    for documentation things that he learned, meet him <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">@github</a>.
+  username: username
+  email: your-email@email.com
+  avatar: /assets/img/avatar.jpg
 
 # Url settings
-url: https://piharpi.com
-baseurl: ""
-permalink: blog/:categories/:title/
-google_analytics: UA-105586262-1
-fb_appid: ""
+url: "https://klise.now.sh"
+baseurl:
+permalink: /:title/
+google_analytics:
+fb_appid:
 
 # Collection setting
 collections:
@@ -67,7 +72,6 @@ exclude:
   - CHANGELOG.md
   - README.md
   - node_modules
-  - bangsring.gemspec
   - CODE_OF_CONDUCT.md
 
 # Plugins
@@ -75,3 +79,4 @@ plugins:
   - jekyll-feed
   - jekyll-sass-converter
   - jekyll-sitemap
+  - jekyll-postfiles

@@ -1,30 +1,48 @@
-// Define defaults for each variable.
-$first-font-family: "Roboto",
-sans-serif !default;
-$second-font-family: "Source Sans Pro",
-sans-serif !default;
-$syntax-font-family: "Fira Code",
-monospace !default;
-$base-font-size: 19px !default;
-$medium-font-size: $base-font-size * 0.938 !default;
-$small-font-size: $base-font-size * 0.875 !default;
-$base-font-weight: 400 !default;
-$base-line-height: 1.688 !default;
-$spacing-unit: 30px !default;
+// Fonts preferences
+$sans-family: Roboto, sans-serif;
+$mono-family: Consolas, monospace;
+$base-font-size: 16px;
+$medium-font-size: $base-font-size * 0.938;
+$small-font-size: $base-font-size * 0.875;
+$base-line-height: 1.85;
 
-// Light Element Color
-$black: #141414 !default;
-$white: #fff !default;
-$base: #f9f9f9 !default;
-$gray: #283c46 !default;
-$blue: #0036c7 !default;
-$light: #ececec !default;
-$smoke: #d2c7c7 !default;
+// Font weight
+// $light-weight: 300; // uncomment if necessary
+$normal-weight: 400;
+$bold-weight: 700;
+// $black-weight: 900; // uncomment if necessary
+
+//Light Colors
+$text-base-color: #434648;
+$text-link-blue: #003fff;
+$text-link-blue-active: #0036c7;
+
+$black: #0d122b;
+$light: #ececec;
+$smoke: #d2c7c7;
+$gray: #6b7886;
+$white: #fff;
+
+// Dark Colors
+$dark-text-base-color: #d9d7e0;
+$dark-text-link-blue: #ff5277;
+$dark-text-link-blue-active: #ff2957;
+
+$dark-black: #131418;
+$dark-white: #f0f8ff;
+$dark-light: #1b1d25;
+$dark-smoke: #4a4d56;
+$dark-gray: #767f87;
 
 // Width of the content area
-$content-width: 750px !default;
+$wide-size: 890px;
+$narrow-size: 720px;
 
-// State of device
+// Padding unit
+$spacing-full: 30px;
+$spacing-half: $spacing-full / 2;
+
+// State of devices
 $on-mobile: 768px;
 $on-tablet: 769px;
 $on-desktop: 1024px;
@@ -40,9 +58,6 @@ $on-widescreen: 1152px;
   font-size: $base-font-size * $ratio;
 }
 
-// Import Sass partials
-@import "bangsring/fonts",
-"bangsring/base",
-"bangsring/layout",
-"bangsring/page",
-"bangsring/syntax";
+// Import sass files
+@import "klise/fonts", "klise/base", "klise/layout", "klise/post",
+  "klise/miscellaneous", "klise/syntax", "klise/dark";

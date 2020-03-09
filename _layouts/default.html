@@ -1,21 +1,18 @@
 ---
 layout: compress
 ---
-
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en " }}">
+{% include header.html %}
 
-{% include head.html %}
-
-<body>
+<body data-theme="{{ site.mode }}">
   {% include navbar.html %}
   <div class="wrapper">
-    {% include jumbotron.html %}
+    {% include author.html %}
     <main aria-label="Content">
       {{ content }}
     </main>
     {% include footer.html %}
   </div>
 </body>
-
 </html>
