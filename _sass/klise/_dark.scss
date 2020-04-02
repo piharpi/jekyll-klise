@@ -12,6 +12,20 @@ body[data-theme="dark"] {
     color: $dark-white;
   }
 
+  // Table
+  table {
+    thead {
+      color: $dark-white;
+      border-color: $dark-light;
+    }
+
+    th,
+    td,
+    tr {
+      border-color: $dark-light;
+    }
+  }
+
   // Post
   .page-content {
     a {
