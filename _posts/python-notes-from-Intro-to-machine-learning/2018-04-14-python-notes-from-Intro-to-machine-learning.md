@@ -17,9 +17,29 @@ That's why I decided to read all of the provided Python modules and implement it
 
 So here are some notes and snippets of Python that I've been collecting so far (I'm not even halfway through the course 😝). Also, note that the codes here are still using Python version 2.7.
 
-## Table of Contents
+### Example Table overflow-table
 
-## Modules Classes and Functions
+<div class="overflow-table" markdown="block">
+
+| Markdown                | HTML                               |    Rendered Output    |
+| :---------------------- | :--------------------------------- | :-------------------: |
+| `[Example Link](#link)` | `<a href="#link">Example Link</a>` | [Example Link](#Link) |
+| `_Be Italic_`           | `<em>Be Italic<em/>`               |      _Be Italic_      |
+| `**Be Bold**`           | `<strong>Be Italic<strong/>`       |      **Be Bold**      |
+
+</div>
+
+\*) _resize to see difference_
+
+### Example Table without-overflow
+
+| Markdown                | HTML                               |    Rendered Output    |
+| :---------------------- | :--------------------------------- | :-------------------: |
+| `[Example Link](#link)` | `<a href="#link">Example Link</a>` | [Example Link](#Link) |
+| `_Be Italic_`           | `<em>Be Italic<em/>`               |      _Be Italic_      |
+| `**Be Bold**`           | `<strong>Be Italic<strong/>`       |      **Be Bold**      |
+
+\*) _resize to see difference_
 
 ### Main Entry File
 
