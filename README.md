@@ -15,7 +15,7 @@ For demo <a href="https://klise.now.sh" target="_blank">klise.now.sh</a>
 * Next & Previous Post
 * Comment layout, enable in frontmatter if you wish
 * Google analytics
-* HTML Minify ([compressed HTML](https://github.com/penibelst/jekyll-compress-html]))
+* HTML Minify ([compressed HTML](https://github.com/penibelst/jekyll-compress-html))
 
 ## Installation
 
