@@ -1,6 +1,20 @@
 # Klisé
 
-Klisé is minimalist Jekyll theme for running a personal site and blog running on Jekyll, Ruby, Netlify, Now.sh.
+Klisé is minimalist Jekyll theme for running a personal site and blog running on Jekyll, Ruby, Netlify, Now.sh.<br>
+For demo <a href="https://klise.now.sh" target="_blank">klise.now.sh</a>
+
+## Features
+
+* Customizable (using `.sass`)
+* Responsive (desktop, tab and mobile)
+* Mobile First Design
+* SEO Optimized
+* RSS Feed
+* Syntax Highlighter ([rouge](https://github.com/rouge-ruby/rouge))
+* Next & Previous Post
+* Comment layout, enable in frontmatter if you wish
+* Google analytics
+* HTML Minify ([compressed HTML](https://github.com/penibelst/jekyll-compress-html]))
 
 ## Installation
 
