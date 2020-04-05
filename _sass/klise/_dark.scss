@@ -108,6 +108,12 @@ body[data-theme="dark"] {
     }
   }
 
+  // Blockquote
+  blockquote {
+    color: $dark-gray;
+    border-color: $dark-light;
+  }
+
   // Strong, Bold
   strong,
   b {
