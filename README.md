@@ -5,7 +5,7 @@ For demo <a href="https://klise.now.sh" target="_blank">klise.now.sh</a>
 
 ## Features
 
-- Light & Dark Mode support
+- Light & Dark Mode support :waxing_crescent_moon:
 - Customizable (using `.sass`)
 - Responsive (desktop, tab and mobile)
 - Mobile First Design
@@ -16,6 +16,8 @@ For demo <a href="https://klise.now.sh" target="_blank">klise.now.sh</a>
 - Comment layout, enable in frontmatter if you wish
 - Google analytics
 - HTML Minify ([compressed HTML](https://github.com/penibelst/jekyll-compress-html))
+- W3C **Validated**
+- Lighthouse and PageSpeed **Passed**
 
 ![Lighthouse](./lighthouse.png)
 
