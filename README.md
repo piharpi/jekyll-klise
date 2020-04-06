@@ -6,7 +6,7 @@ For demo <a href="https://klise.now.sh" target="_blank">klise.now.sh</a>
 ## Features
 
 - Light & Dark Mode support :waxing_crescent_moon:
-- Customizable (using `.sass`)
+- Customizable (using `.scss`)
 - Responsive (desktop, tab and mobile)
 - Mobile First Design
 - SEO Optimized
