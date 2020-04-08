@@ -34,6 +34,8 @@ bundle exec jekyll serve
 
 Navigate to `localhost:4000`. You're Welcome, Fork and be Stargaze.
 
+**Don't Forget** to change site icon, go to `jekyll-klise/assets/favicons` and replace with your own.
+
 ## Contributing
 
 If you see any typos or formatting errors in a post, or any other issue that needs to be addressed, please do not hesitate to open a pull request and fix it!
