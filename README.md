@@ -40,6 +40,8 @@ Navigate to `localhost:4000`. You're Welcome, Fork and be Stargaze.
 
 If you see any typos or formatting errors in a post, or any other issue that needs to be addressed, please do not hesitate to open a pull request and fix it!
 
+Yeaaa feel free to open a pull request.
+
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
