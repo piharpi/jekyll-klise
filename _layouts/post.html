@@ -14,18 +14,9 @@ layout: compress
       <article itemscope itemtype="https://schema.org/BlogPosting">
 
         <header class="header">
-          {% if page.tags and page.tags != empty %}
-          <div class="tags">
-            {% assign tags = page.tags %}
-            <span itemprop="keywords">
-              {% for tag in tags %}
-              <a class="tag"
-                href="/tags/#{{tag | downcase | slugify}}">{{tag | upcase }}</a>{% unless forloop.last %},{% endunless %}
-              {% endfor %}
-            </span>
-          </div>
-          {% endif %}
+
           <h1 class="header-title" itemprop="headline">{{ page.title | escape }}</h1>
+
           {% if page.date %}
           <div class="post-meta">
             <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
@@ -42,21 +33,26 @@ layout: compress
             <span hidden itemprop="mainEntityOfPage">{{ page.excerpt }}</span>
           </div>
           {% endif %}
+
         </header>
 
         <div class="page-content" itemprop="articleBody">
           {% include anchor_headings.html html=content anchorClass="anchor-head" beforeHeading=true h_min=1 h_max=4 %}
-          {% if page.tweet %}
-          <p>Comments this article on
-            <a href="https://twitter.com/{{site.username}}/status/{{page.tweet}}">Twitter</a>.
-          </p>
-          {% endif %}
         </div>
-      </article>
-      {% if page.comments %}
-        {% include comments.html%}
-      {% endif %}
 
+        {% if page.tags and page.tags != empty %}
+        <div class="tags">
+          {% assign tags = page.tags %}
+          <span itemprop="keywords">
+            {% for tag in tags %}
+            <a class="tag"
+              href="/tags/#{{tag | downcase | slugify}}">{{tag | upcase }}</a>{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          </span>
+        </div>
+        {% endif %}
+
+      </article>
     </main>
     {% if page.modified %}
       <small class="post-updated-at">updated_at {{page.modified | date: "%d-%m-%Y"}}</small>
