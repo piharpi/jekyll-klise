@@ -9,7 +9,7 @@ layout: compress
 
 <body>
   {% include navbar.html %}
-  <div class="wrapper post">
+  <div class="wrapper post" id="wrapper">
     <main class="page-content" aria-label="Content">
       <article itemscope itemtype="https://schema.org/BlogPosting">
 
@@ -47,7 +47,7 @@ layout: compress
         <div class="page-content" itemprop="articleBody">
           {% include anchor_headings.html html=content anchorClass="anchor-head" beforeHeading=true h_min=1 h_max=4 %}
           {% if page.tweet %}
-          <p>Comments this article on 
+          <p>Comments this article on
             <a href="https://twitter.com/{{site.username}}/status/{{page.tweet}}">Twitter</a>.
           </p>
           {% endif %}

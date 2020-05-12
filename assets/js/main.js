@@ -32,4 +32,16 @@
       }
     }
   }
+
+  // Blur content when the menu is open
+  const checkbox = document.getElementById("menu-trigger");
+  const wrapper = document.getElementById("wrapper");
+
+  checkbox.addEventListener("change", function() {
+    if (this.checked) {
+      wrapper.classList.add("trigger-wrapper");
+    } else {
+      wrapper.classList.remove("trigger-wrapper");
+    }
+  });
 })();
