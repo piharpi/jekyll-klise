@@ -1,5 +1,4 @@
-# Klisé
-
+# Klisé 
 Klisé is minimalist Jekyll theme for running a personal site and blog running on Jekyll.<br>
 For demo <a href="https://klise.now.sh" target="_blank">klise.now.sh</a>
 
@@ -36,7 +35,12 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Navigate to `localhost:4000`. You're Welcome, Fork and be Stargaze.
+Navigate to `localhost:4000`. You're Welcome, Fork and be Stargazer.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/piharpi/jekyll-klise) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/piharpi/jekyll-klise)
+
+## Limitation
+- Since [`jekyll-postfiles`](https://github.com/nhoizey/jekyll-postfiles#compatibility) plugin isn't supported by github pages, this cause will make your site problems, path broken or post images won't show up, you can host alternatively using likes [netlify.com](https://netlify.com), [vercel.com](https://vercel.com) or [surge.sh](https://surge.sh) services, which support 3rd party.
 
 ## Contributing
 
