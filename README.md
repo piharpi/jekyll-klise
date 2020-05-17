@@ -19,12 +19,11 @@ For demo <a href="https://klise.now.sh" target="_blank">klise.now.sh</a>
 - [x] W3C **Validated**
 - [x] Lighthouse and PageSpeed **Passed**
 
+![Lighthouse](./lighthouse.png)
+
 ## Todos
 - [ ] Add schema.org meta information.
 - [ ] Transform class selector to BEM metodology.
-
-
-![Lighthouse](./lighthouse.png)
 
 ## Installation
 
