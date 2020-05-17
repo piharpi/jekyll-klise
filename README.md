@@ -5,19 +5,24 @@ For demo <a href="https://klise.now.sh" target="_blank">klise.now.sh</a>
 
 ## Features
 
-- Light & Dark Mode support :waxing_crescent_moon:
-- Customizable (using `.scss`)
-- Responsive (desktop, tab and mobile)
-- Mobile First Design
-- SEO Optimized
-- RSS Feed
-- Syntax Highlighter ([rouge](https://github.com/rouge-ruby/rouge))
-- Next & Previous Post
-- Comment layout, enable in frontmatter if you wish
-- Google analytics
-- HTML Minify ([compressed HTML](https://github.com/penibelst/jekyll-compress-html))
-- W3C **Validated**
-- Lighthouse and PageSpeed **Passed**
+- [x] Light & Dark Mode support :waxing_crescent_moon:
+- [x] Customizable (using `.scss`)
+- [x] Responsive (desktop, tab and mobile)
+- [x] Mobile First Design
+- [x] SEO Optimized
+- [x] RSS Feed
+- [x] Syntax Highlighter ([rouge](https://github.com/rouge-ruby/rouge))
+- [x] Next & Previous Post
+- [x] Comment layout, enable in frontmatter if you wish
+- [x] Google analytics
+- [x] HTML Minify ([compressed HTML](https://github.com/penibelst/jekyll-compress-html))
+- [x] W3C **Validated**
+- [x] Lighthouse and PageSpeed **Passed**
+
+## Todos
+- [ ] Add schema.org meta information.
+- [ ] Transform class selector to BEM metodology.
+
 
 ![Lighthouse](./lighthouse.png)
 
@@ -33,8 +38,6 @@ bundle exec jekyll serve
 ```
 
 Navigate to `localhost:4000`. You're Welcome, Fork and be Stargaze.
-
-**Don't Forget** to change site icon, go to `jekyll-klise/assets/favicons` and replace with your own.
 
 ## Contributing
 
