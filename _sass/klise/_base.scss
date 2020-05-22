@@ -1,4 +1,12 @@
 // Reset some basic elements
+* {
+  -webkit-transition: background-color 75ms ease-in, border-color 75ms ease-in;
+  -moz-transition: background-color 75ms ease-in, border-color 75ms ease-in;
+  -ms-transition: background-color 75ms ease-in, border-color 75ms ease-in;
+  -o-transition: background-color 75ms ease-in, border-color 75ms ease-in;
+  transition: background-color 75ms ease-in, border-color 75ms ease-in;
+}
+
 html {
   overflow-x: hidden;
   width: 100%;
@@ -272,7 +280,7 @@ blockquote {
     padding-right: $spacing-full - 10;
     padding-left: $spacing-full - 10;
 
-    &.trigger-wrapper {
+    &.blurry {
       animation: 0.2s ease-in forwards blur;
       -webkit-animation: 0.2s ease-in forwards blur;
     }
