@@ -26,6 +26,7 @@
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     opacity: 0.7;
+    z-index: 1;
     &:hover {
       cursor: pointer;
       opacity: 1;
@@ -130,7 +131,7 @@
       padding-bottom: 15px;
       cursor: pointer;
       text-align: center;
-      z-index: 10;
+      z-index: 1;
       > svg {
         fill: $black;
         opacity: 0.7;
