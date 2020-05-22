@@ -25,6 +25,7 @@ For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now
 
 ## Todos
 
+- [ ] Intergrated with PhotoSwipe.
 - [ ] Add schema.org meta information.
 - [ ] Transform class selector to BEM metodology.
 
