@@ -124,11 +124,11 @@ body[data-theme="dark"] {
   .navbar {
     border-color: $dark-light;
     .menu {
-      a#mood {
-        .mood-sunny {
+      a#mode {
+        .mode-sunny {
           display: block;
         }
-        .mood-moon {
+        .mode-moon {
           display: none;
         }
       }
@@ -220,7 +220,7 @@ body[data-theme="dark"] {
   }
 
   // 404 Page
-  .wrapper.not-found {
+  .not-found {
     .title {
       color: $dark-white;
       text-shadow: 1px 0px 0px $dark-text-link-blue;
