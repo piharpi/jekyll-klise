@@ -5,7 +5,18 @@
   }
 
   100% {
-    opacity: 0.99;
+    opacity: 0.8;
+  }
+}
+
+// Animation blur
+@keyframes blur {
+  0% {
+    filter: blur(0px);
+  }
+
+  100% {
+    filter: blur(4px);
   }
 }
 
