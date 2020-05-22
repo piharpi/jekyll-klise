@@ -7,17 +7,20 @@ layout: compress
 
 {% include header.html %}
 <body>
-  <main aria-label="Content">
-    {% include navbar.html %}
-    <div class="wrapper not-found" id="wrapper">
-      <div class="container">
-        <div class="title">404</div>
-        <p class="phrase">😕 Hmm... Seems you lost from my journey.</p>
-        <a class="solution" href="{{ site.url }}">back home</a>
+  {% include navbar.html %}
+  <div class="wrapper">
+    <main aria-label="Content">
+      <div class="not-found">
+        <div class="container">
+          <div class="title">404</div>
+          <p class="phrase">😕 Hmm... Seems you lost from my journey.</p>
+          <a class="solution" href="{{ site.url }}">back home</a>
+        </div>
       </div>
-    </div>
+    </main>  
     {% include footer.html %}
-  </main>
+</div>
+    
 </body>
 
 </html>
