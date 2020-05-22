@@ -53,21 +53,22 @@ layout: compress
           {% endif %}
         </div>
       </article>
+    
       {% if page.comments %}
         {% include comments.html%}
       {% endif %}
 
     </main>
+
     {% if page.modified %}
       <small class="post-updated-at">updated_at {{page.modified | date: "%d-%m-%Y"}}</small>
     {% endif %}
     {% if page.next or page.previous %}
       {% include navigation.html %}
     {% endif %}
+
+    {% include footer.html %}
   </div>
-
-  {% include footer.html %}
-
 </body>
 
 </html>
