@@ -23,7 +23,7 @@ For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now
 
 ![Lighthouse Result](./lighthouse.png)
 
-## Todos
+## Backlog
 
 - [ ] Intergrated with PhotoSwipe.
 - [ ] Add schema.org meta information.
