@@ -23,7 +23,7 @@ For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now
 
 ![Lighthouse Result](./lighthouse.png)
 
-## Backlog
+## Backlogs
 
 - [ ] Intergrated with PhotoSwipe.
 - [ ] Add schema.org meta information.
@@ -50,7 +50,7 @@ Navigate to `localhost:4000`. You're Welcome, Fork and be Stargazer.
 
 ## Contributing
 
-If you see any typos or formatting errors in a post, or any other issue that needs to be addressed, please do not hesitate to open a pull request and fix it!
+If you see any typos or formatting errors in a post, or want to helping reduce backlogs or any other issue that needs to be addressed, please do not hesitate to open a pull request and fix it!, please read [contributing](./CONTRIBUTING.md) before PR.
 
 Yeaaa feel free to open a pull request.
 
