@@ -184,12 +184,18 @@
   margin-top: 6.3rem;
   margin-bottom: 7.2rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
   @include media-query($on-mobile) {
     margin-bottom: 3em;
   }
 
-  .author-avatar {
+  .author-avatar-wrapper {
+    border-style: solid;
+    border-width: 1px;
+    border-color:b6b6b6;
     width: 70px;
     height: 70px;
     border-radius: 100%;
@@ -200,6 +206,17 @@
     -webkit-animation: 0.5s ease-in forwards fadein;
     animation: 0.5s ease-in forwards fadein;
     opacity: 1;
+    overflow: hidden;
+  }
+  
+  .author-avatar {
+    transition: 0.6s;
+    &:hover {
+      -ms-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
   }
 
   .author-name {
