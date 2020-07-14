@@ -15,4 +15,4 @@ You can [report](http://github.com/piharpi/jekyll-klise/issues/new) if there is 
 ##### may u needs ✨
 
 - {{ site.author.email }}
-- github.com/{{ site.author.username }}
+- github.com/{{ site.author.github }}
