@@ -14,6 +14,10 @@
   url: /posts/
   external: false 
 
+- title: tags
+  url: /tags/
+  external: false 
+
 # set true if you using external link, see bellow
 
 # Example:
