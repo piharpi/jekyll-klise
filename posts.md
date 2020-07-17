@@ -1,15 +1,16 @@
 ---
-layout: default
-home: true
+title: All Posts
+permalink: /posts/
+layout: page
+excerpt: All posts I've made.
+comments: false
 ---
 
-<h4 class="posts-item-note">Recent Posts</h4>
-<!-- change posts display limit here -->
-{% for post in site.posts limit:7%}
+{% for post in site.posts%}
 <article class="post-item">
   <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
-  <h4 class="post-item-title">
+  <h3 class="post-item-title">
     <a href="{{ post.url }}">{{ post.title | escape }}</a>
-  </h4>
+  </h3>
 </article>
 {% endfor %}
