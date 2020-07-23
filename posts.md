@@ -11,6 +11,6 @@ comments: false
   <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
   <h4 class="post-item-title">
     <a href="{{ post.url }}">{{ post.title | escape }}</a>
-  </h3>
+  </h4>
 </article>
 {% endfor %}
