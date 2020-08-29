@@ -134,12 +134,13 @@ ul {
     text-align: -webkit-match-parent;
   }
   li::before {
-    content: "\03BB";
+    content: "\FE63";
     display: inline-block;
-    width: 1em;
+    top: -1px;
+    width: 1.2em;
     position: relative;
-    margin-left: -1em;
-    font-weight: $bold-weight;
+    margin-left: -1.3em;
+    font-weight: 700;
   }
 }
 

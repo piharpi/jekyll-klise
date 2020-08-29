@@ -217,6 +217,7 @@
 
 // Content
 .posts-item-note {
+  font-size: $base-font-size;
   font-weight: 700;
   margin-bottom: 5px;
   color: $black;
@@ -246,11 +247,15 @@
 
   .post-item-title {
     margin: 0;
-    color: $text-base-color;
+    border: 0;
+    padding: 0;
+    font-size: $base-font-size;
     font-weight: normal;
     letter-spacing: 0.1px;
 
     a {
+      color: $text-base-color;
+
       &:hover,
       &focus {
         color: $black;
@@ -287,7 +292,7 @@
     }
   }
 
-  .footer_theme-copyright {
+  .footer_copyright {
     font-size: $small-font-size - 1;
     margin-top: 3px;
     display: block;
@@ -318,5 +323,49 @@
   }
   .solution:hover {
     color: $text-link-blue-active;
+  }
+}
+
+
+.search-article {
+  position: relative;
+  margin-bottom: 50px;
+
+  label[for="search-input"] {
+    position: relative;
+    top: 10px;
+    left: 11px;
+  }
+
+  input[type="search"] {
+    border: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 10px 10px 35px;
+    font-size: $base-font-size;
+    color: $text-base-color;
+    background-color: rgba(128, 128, 128, 0.1);
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    outline: none;
+  }
+}
+
+#search-results {
+  text-align: center;
+  li {
+    text-align: left;
+  }
+}
+
+.archive-tags {
+  height: auto;
+  .tag-item {
+    padding: 1px 3px;
+    border-radius: 2px;
+    border: 1px solid rgba(128, 128, 128, 0.1);
+    background-color: rgba(128, 128, 128, 0.1);
   }
 }

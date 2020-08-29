@@ -213,7 +213,7 @@ body[data-theme="dark"] {
     a.footer_item:not(:last-child) {
       color: $dark-white;
     }
-    .footer_theme-copyright {
+    .footer_copyright {
       color: $dark-gray;
       opacity: 1;
     }
@@ -235,4 +235,11 @@ body[data-theme="dark"] {
       color: $dark-text-link-blue-active;
     }
   }
+
+  .search-article {
+    input[type="search"] {
+      color: $dark-text-base-color;
+    }
+  }
+
 }
