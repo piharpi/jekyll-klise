@@ -12,7 +12,7 @@ If you have a question about him or else, just send a letter to him.
 
 You can [report](http://github.com/piharpi/jekyll-klise/issues/new) if there is an broken link(s) or somethings else.
 
-##### may u needs ✨
+**may u needs ✨**
 
 - {{ site.author.email }}
 - github.com/{{ site.author.github }}
