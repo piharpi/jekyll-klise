@@ -5,7 +5,7 @@ tags: [python, machine-learning]
 description: Notes and code snippets of Python that I've been collecting so far throughout the "Intro to Machine Learning" course.
 ---
 
-##### This article is for Demo purpose
+**This article is for Demo purpose**
 
 The article was originally on [this repo](https://github.com/risan/risanb.com/blob/master/content/posts/python-notes-from-intro-to-machine-learning/index.md)
 
@@ -554,6 +554,6 @@ selected_features_test_transformed = selector.transform(features_test_transforme
 
 The `percentile` is the percentage of features that we'd like to select based on its highest score.
 
-##### This article is for Demo purpose
+**This article is for Demo purpose**
 
 The article was originally on [this repo](https://github.com/risan/risanb.com/blob/master/content/posts/python-notes-from-intro-to-machine-learning/index.md)

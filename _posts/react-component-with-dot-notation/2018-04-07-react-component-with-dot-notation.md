@@ -5,7 +5,7 @@ tags: [javascript, react]
 description: Learn how to define a React component that is accessible through the dot notation. A common component pattern to show a parent-child relation.
 ---
 
-##### This article is for Demo purpose
+**This article is for Demo purpose**
 
 The article was originally on [this repo](https://github.com/risan/risanb.com/blob/master/content/posts/react-component-with-dot-notation/index.md)
 
@@ -107,6 +107,6 @@ export default class Menu extends Component {
 }
 ```
 
-##### This article is for Demo purpose
+**This article is for Demo purpose**
 
 The article was originally on [this repo](https://github.com/risan/risanb.com/blob/master/content/posts/react-component-with-dot-notation/index.md)
