@@ -2,17 +2,6 @@
   // Theme switch
   const body = document.body;
   const lamp = document.getElementById("mode");
-  const data = body.getAttribute("data-theme");
-
-  const initTheme = (state) => {
-    if (state === "dark") {
-      body.setAttribute("data-theme", "dark");
-    } else if (state === "light") {
-      body.removeAttribute("data-theme");
-    } else {
-      localStorage.setItem("theme", data);
-    }
-  };
 
   const toggleTheme = (state) => {
     if (state === "dark") {
@@ -25,8 +14,6 @@
       initTheme(state);
     }
   };
-
-  initTheme(localStorage.getItem("theme"));
 
   lamp.addEventListener("click", () =>
     toggleTheme(localStorage.getItem("theme"))
