@@ -338,18 +338,27 @@
   }
 
   input[type="search"] {
-    border: 0;
     top: 0;
     left: 0;
-    position: absolute;
+    border: 0;
     width: 100%;
+    height: 40px;
+    outline: none;
+    position: absolute;
     border-radius: 5px;
     padding: 10px 10px 10px 35px;
-    font-size: $base-font-size;
     color: $text-base-color;
+    -webkit-appearance: none;
+    font-size: $base-font-size;
     background-color: rgba(128, 128, 128, 0.1);
     border: 1px solid rgba(128, 128, 128, 0.1);
-    outline: none;
+    &::-webkit-input-placeholder {
+      color: #808080;
+    }
+    &::-webkit-search-decoration,
+    &::-webkit-search-results-decoration {
+      display: none;
+    }
   }
 }
 

@@ -34,10 +34,10 @@ For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now
 Run local server:
 
 ```bash
-git clone https://github.com/piharpi/jekyll-klise.git
-cd jekyll-klise
-bundle install
-bundle exec jekyll serve
+$ git clone https://github.com/piharpi/jekyll-klise.git
+$ cd jekyll-klise
+$ bundle install
+$ bundle exec jekyll serve
 ```
 
 Navigate to `localhost:4000`. You're Welcome, Fork and be Stargazer.

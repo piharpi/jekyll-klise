@@ -7,6 +7,14 @@
   transition: background-color 75ms ease-in, border-color 75ms ease-in;
 }
 
+.notransition {
+  -webkit-transition: none;
+  -moz-transition: none; 
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
 html {
   overflow-x: hidden;
   width: 100%;
