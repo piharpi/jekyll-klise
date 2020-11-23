@@ -5,7 +5,7 @@ description: >- # site description
   for documentation things that he learned, meet him <a href="https://github.com/piharpi" target="_blank" rel="noopener">@github</a>.
 lang: en-US # default lang
 timezone: Asia/Jakarta # set your timezone
-image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
+image: assets/img/moon.png # This image used for Open Graph more info https://ogp.me/
 repo: https://github.com/piharpi/jekyll-klise # site repo [optional]
 mode: dark # default theme "dark" | "light"
 
@@ -13,8 +13,7 @@ mode: dark # default theme "dark" | "light"
 author:
   name: Hanif Dwi Prasetiyo # author name
   bio: >- # tell to the world
-    The minimalist Jekyll theme, light and dark mode support, for running a personal site and blog, 
-    meet Klisé theme at <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">@github</a>.
+    A passionate student in Front-end Development and UI/UX willing to learn more and loves to share.
   username: hanifxdp # general username
   github: hanifxdp # github username
   # twitter: twitter_username 
