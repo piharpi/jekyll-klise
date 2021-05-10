@@ -6,7 +6,19 @@ I am an undergrad robotics researcher at the [Purdue Collaborative Robotics Lab]
 
 I absolutely love robotics and teaching others about robotics. Hopefully, with my content, you can know as much as me or more!
 
-What I can tell you about: ROS, Robot arms, Computer Vision using YOLOv5
-What I am learning right now: Deep Learning, Deep RL, SLAM
-What I am excited about: Building robots that actually improve human quality of life
-What I post about: ROS robotics tutorials, short snippets of insight in areas in DL, RL, ML, SLAM, ROS, quality of life blogs
+### What I can tell you about
+- ROS
+- Building a hobby robot arm with vision
+- Computer Vision using YOLOv5
+### What I am learning right now
+- Deep Learning
+- Deep RL
+- SLAM
+
+### What I am excited about
+Building robots that actually improve human quality of life
+
+### What I post about
+- ROS robotics tutorials
+- short snippets of insight in areas in DL, RL, ML, SLAM, ROS
+- blogs on life
