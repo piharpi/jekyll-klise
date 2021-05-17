@@ -1,0 +1,159 @@
+---
+title: Introduction to ROS
+layout: page 
+permalink: /vault/:basename/
+comments: false 
+---
+
+<div class="content"><h1 id="introduction-to-ros">Introduction to ROS</h1>
+
+<h2 id="what-is-ros">What is ROS?</h2>
+
+<p>ROS is an open-source robotics framework that makes it easier for the many moving parts in a robot to communicate with each other.</p>
+
+<p>ROS also has a package system, which allows for easy sharing of code, reducing development time.</p>
+
+<h2 id="how-does-ros-work">How does ROS work?</h2>
+
+<p>ROS can be defined as a <strong>communication protocol</strong>, a defined set of rules for how things communicate with each other. These rules can be overwhelming at face value, but to make it easier to understand, here's an analogy of how it works.</p>
+
+<h3 id="analogy-liquid-transportation-in-a-factory">Analogy: Liquid Transportation in a Factory</h3>
+
+<p>Imagine an imaginary factory where there are <strong>stations</strong> that hold <strong>liquids</strong> and transfer liquids to other stations through <strong>pipes</strong>, using <strong>pumps</strong> and <strong>gauges</strong>.</p>
+
+<p><img src="/vault/Media/Liquid Factory.png" /></p>
+
+<h4 id="liquid">Liquid</h4>
+
+<p>Liquid that flows through a pipe can be water, orange juice, hot chocolate, or any type of liquid. Any one pipe can only have one type of liquid moving through it.</p>
+
+<h4 id="pipe">Pipe</h4>
+
+<p>Some things to note about the pipe:</p>
+
+<ul>
+<li>Liquid flows in one direction</li>
+<li>Pipes can be "forked", so the liquid can flow to multiple destinations</li>
+</ul>
+
+<h4 id="pumps-and-gauges">Pumps and Gauges</h4>
+
+<p>Pumps actually move the liquid through these pipes, with their goal being to move the liquid to another station. </p>
+
+<p>Gauges allow us to answer questions like What liquid is moving through this pipe? How much liquid is there?</p>
+
+<p>Pumps and gauges are only found in stations.</p>
+
+<h4 id="station">Station</h4>
+
+<p>Some things to note about the station:</p>
+
+<ul>
+<li>Can have mutiple pipes connected to it, and each pipe can either have the liquid flow in or out of the station</li>
+<li>Pipes that have liquid flowing in have gauges and pipes that have liquid flowing out have pumps</li>
+</ul>
+
+<h3 id="comparing-the-analogy-to-ros">Comparing the Analogy to ROS</h3>
+
+<p>Here is the mapping of terminology from the analogy to ROS:</p>
+
+<ul>
+<li>Liquid -> ROS message</li>
+<li>Pipe -> ROS Topic</li>
+<li>Pumps and gauges -> ROS Publishers and Subscribers</li>
+<li>Station -> ROS Node</li>
+</ul>
+
+<p>Here is the analogy converted with ROS terminology, so you can go back to the analogy and compare if you get confused later.<br />
+<img src="/vault/Media/ROS Diagram.png" /></p>
+
+<h4 id="message">Message</h4>
+
+<p>Messages are sent through a topic. <a href="http://wiki.ros.org/common_msgs">Here</a> is a list of common messages used. Any one topic can only have one type of message sent over it.</p>
+
+<h4 id="topic">Topic</h4>
+
+<p>Some things to note about the topic:</p>
+
+<ul>
+<li>ROS Messages flows in one direction on a topic</li>
+<li>Topics can have multiple publishers that publish messages over it and also have multiple subscribers that subscribe to messages sent over it</li>
+</ul>
+
+<h4 id="publishers-and-subscribers">Publishers and Subscribers</h4>
+
+<p>Publishers send messages over a topic, with their goal being to send the data in a message to another node. </p>
+
+<p>Subscribers allow us to capture the data in a message that is sent over a topic and manipulate it using code to answer questions like: How fast should my robot go? How far should this servo turn?</p>
+
+<p>Publishers and subscribers are initialized in nodes.</p>
+
+<h4 id="node">Node</h4>
+
+<p>Some things to note about the node:</p>
+
+<ul>
+<li>Can have more than one publisher or subscriber initialized</li>
+<li>One python file or C++ file usually has one node that does a particular function</li>
+</ul>
+
+<h3 id="ros-example">ROS Example</h3>
+
+<p>We need to build a manual control node called <code class="language-plaintext highlighter-rouge">manual_control</code> that has 1 subscriber that subscribes to joystick messages of type <code class="language-plaintext highlighter-rouge">sensor_msgs/joy</code> on topic <code class="language-plaintext highlighter-rouge">/joy</code> and has 1 publisher that publishes velocity messages of message type <code class="language-plaintext highlighter-rouge">std_msgs/Twist</code> over topic <code class="language-plaintext highlighter-rouge">/cmd_vel</code>.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>If you didn't understand the <a href="/vault/ros-example">#ROS Example</a>, no worries! Feel free to add a comment and ask any questions that you have and I or others can get it clarified for you, or do some more googling. If there are better explanations out there, send them my way!</p>
+
+<p>If you are able to understand what the ROS node in the example is doing and can visualize it, great job! </p>
+
+<p>At this point, you now should know how to convert what you are trying to do into common ROS terminology, which makes you one step closer to what you are building. </p>
+
+<p>Now, lets setup ROS!</p>
+
+<h3 id="up-next">Up Next</h3>
+
+<ul>
+<li><a href="/vault/setup-ros">Setup ROS</a></li>
+</ul>
+
+<p><span class="timestamp">Last update: 05/16/2021 11:29</span></p>
+</div>
+
+<h2 id="Backlinks">Backlinks</h2>
+<div class="backlinks">
+
+<ul>
+<li><a href="/vault/ros-tutorials">ROS Tutorials</a></li>
+</ul>
+
+</div>
+
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz"
+  crossorigin="anonymous"></script>
+
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
+  crossorigin="anonymous"></script>
+
+<!-- Parsing single dollar signs -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+        {left: "\\[", right: "\\]", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+      ]
+  });
+  });
+</script>

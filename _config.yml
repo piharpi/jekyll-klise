@@ -1,29 +1,26 @@
 # Site settings
-title: Klise Theme # site title
+title: Raghava Uppuluri # site title
 description: >- # site description
-  He's writing in Bahasa about web technology and experience as a journal 
-  for documentation things that he learned, meet him <a href="https://github.com/piharpi" target="_blank" rel="noopener">@github</a>.
+  A collection of my learnings in Robotics and life.
 lang: en-US # default lang
-timezone: Asia/Jakarta # set your timezone
+timezone: US/Eastern # set your timezone
 image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
-repo: https://github.com/piharpi/jekyll-klise # site repo [optional]
+repo: https://github.com/raghavauppuluri13/website # site repo [optional]
 mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
-  name: Jekyll Klisé # author name
+  name: Raghava Uppuluri # author name
   bio: >- # tell to the world
-    The minimalist Jekyll theme, light and dark mode support, for running a personal site and blog, 
-    meet Klisé theme at <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">@github</a>.
-  username: username # general username
-  github: github_username # github username
-  twitter: twitter_username # twitter username
-  facebook: facebook_username # facebook username
-  email: your-email@email.com # email adress
+    I love robots and teaching others about it.
+  username: raghavauppuluri # general username
+  github: raghavauppuluri13 # github username
+  twitter: UppuluriRaghava # twitter username
+  email: ruppulur@purdue.edu # email adress
   avatar: /assets/img/avatar.jpg # change with your own avatar
 
 # URL settings
-url: "https://klise.now.sh" #
+url: "https://raghavauppuluri.dev" #
 baseurl:
 permalink: /:title/
 google_analytics: # leave it blank if not wish
@@ -32,12 +29,16 @@ fb_appid:
 # Collection setting
 collections:
   posts:
-    output: true
+    output: true 
 
-# Markdown settings
-markdown: kramdown
+# Conversion
+markdown:    kramdown
 highlighter: rouge
+
+# Markdown Processors
 kramdown:
+  input: GFM
+  auto_ids: true
   syntax_highlighter: rouge
 
 # Default front matter
@@ -60,7 +61,7 @@ jekyll_compose:
     description:
 
 # Homepage limit posts
-number_of_posts: 5
+number_of_posts: 1
 
 # Build settings
 # theme: klise
@@ -70,6 +71,7 @@ sass:
 include:
   - _redirects
   - .htaccess
+  - vault
 
 exclude:
   - CNAME

@@ -1,0 +1,271 @@
+---
+title: Setup ROS
+layout: page 
+permalink: /vault/:basename/
+comments: false 
+---
+
+<div class="content"><h1 id="setup-ros-noetic-on-macos-linux-or-windows-in-15-minutes-using-robostack">Setup ROS Noetic on MacOS, Linux, or Windows in 15 minutes using RoboStack</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p><a href="https://www.ros.org/">ROS</a> is notoriously difficult to get working for beginners, especially if you have a Windows computer or Mac. You need access to a Linux OS, battle through GUI display issues, compilation issues, memory limitations if you use a VM, robot hardware access if you use WSL or Docker, and many more issues that scare beginners away.</p>
+
+<p>Fortunately, the amazing team at RoboStack built <a href="https://github.com/RoboStack/ros-noetic">RoboStack</a>, an open-source ROS package management tool using <a href="https://docs.conda.io/en/latest/">conda</a> (a package/environment manager), essentially allowing Linux, MacOS, or Windows to be able to run ROS natively!</p>
+
+<p>RoboStack currently supports ros-noetic and ros2-foxy.</p>
+
+<p>By the end of this tutorial, hopefully you will have a working ROS setup in no time!</p>
+
+<p><strong>Prerequisite: This tutorial assumes the reader has basic knowledge of using the command line on their system.</strong></p>
+
+<h2 id="step-1-install-miniforge-optionally-mamba">Step 1: Install miniforge (optionally mamba)</h2>
+
+<h3 id="1-click-one-of-the-below-links-to-download-the-installer">1.  Click one of the below links to download the installer.</h3>
+
+<p>Latest installers with Python 3.9 in the base environment:</p>
+
+<table>
+<thead>
+<tr>
+  <th>OS</th>
+  <th>Architecture</th>
+  <th>Download</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Linux</td>
+  <td>x86_64 (amd64)</td>
+  <td><a href="https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh">Miniforge3-Linux-x86_64</a></td>
+</tr>
+<tr>
+  <td>Linux</td>
+  <td>aarch64 (arm64)</td>
+  <td><a href="https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh">Miniforge3-Linux-aarch64</a></td>
+</tr>
+<tr>
+  <td>Linux</td>
+  <td>ppc64le (POWER8/9)</td>
+  <td><a href="https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-ppc64le.sh">Miniforge3-Linux-ppc64le</a></td>
+</tr>
+<tr>
+  <td>OS X</td>
+  <td>x86_64</td>
+  <td><a href="https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-x86_64.sh">Miniforge3-MacOSX-x86_64</a></td>
+</tr>
+<tr>
+  <td>OS X</td>
+  <td>arm64 (Apple Silicon)</td>
+  <td><a href="https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh">Miniforge3-MacOSX-arm64</a></td>
+</tr>
+<tr>
+  <td>Windows</td>
+  <td>x86_64</td>
+  <td><a href="https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe">Miniforge3-Windows-x86_64</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>Taken from the miniforge <a href="https://github.com/conda-forge/miniforge">README</a>,</p>
+
+<h3 id="2-run-the-installer">2. Run the installer</h3>
+
+<p>Open your terminal in MacOS/Linux or Windows and navigate to the directory with the installed file. Then run the following command:</p>
+
+<p><strong>MacOS/Linux:</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bash Miniforge3-your-installer.sh </code></pre></figure>
+
+<p><strong>Windows:</strong> Double click on .exe file</p>
+
+<p><strong>Note: at the moment on Windows only the Command Prompt terminal is supported, while Powershell is not supported.</strong></p>
+
+<p>After accepting terms and conditions, <strong>select yes</strong> to the option to run <code class="language-plaintext highlighter-rouge">conda init</code>, which will activate the miniforge conda base environment for you once the installer exits.</p>
+
+<h4 id="helpful-tip">Helpful tip:</h4>
+
+<p>To avoid conflicts with pip or other installations, only activate your conda environment only when you need it. To disable the auto activation, run </p>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">conda config --set auto_activate_base false</code></pre></figure>
+
+<h4 id="another-helpful-tip">Another Helpful tip:</h4>
+
+<p>To manually activate your miniforge conda base environment, run:<br />
+<code class="language-plaintext highlighter-rouge">source /path/to/miniforge3/bin/activate</code></p>
+
+<p>To save yourself from typing that every time you open a new shell. Add this alias to your .bashrc or .zshrc:</p>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">alias forge_init='source /path/to/miniforge3/bin/activate'</code></pre></figure>
+
+<p>Then, just type<code class="language-plaintext highlighter-rouge">forge_init</code> in your terminal to automatically activate your base conda env.</p>
+
+<p>If you are unfamiliar with .bashrc or .zshrc: check <a href="https://medium.com/@tzhenghao/a-guide-to-building-a-great-bashrc-23c52e466b1c">this tutorial</a> out.</p>
+
+<h3 id="3-install-mamba-optional-but-recommended">3. Install mamba (Optional, but recommended)</h3>
+
+<p>If you want to have faster package download speeds, install <a href="https://github.com/mamba-org/mamba">mamba</a></p>
+
+<p>Ensure that your miniforge base environment is activated, then run:<br />
+<code class="language-plaintext highlighter-rouge">conda install mamba -n base -c conda-forge</code></p>
+
+<p>You can then install packages like this:<br />
+<code class="language-plaintext highlighter-rouge">mamba install package-name</code></p>
+
+<h2 id="step-2-setup-conda-environment-with-robostack">Step 2: Setup conda environment with RoboStack</h2>
+
+<h3 id="1-create-the-robostack-conda-environment">1. Create the robostack conda environment</h3>
+
+<p>Ensure that your base conda environment is activated (should see <code class="language-plaintext highlighter-rouge">(base)</code> in your command line tool). Then run:</p>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">conda create -n robostackenv python=3.8
+conda activate robostackenv</code></pre></figure>
+
+<h3 id="2-add-channels-and-set-channel-priority">2. Add channels and set channel priority</h3>
+
+<p>This adds the conda-forge and robostack channel to your persistent configuration in ~/.condarc.</p>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">conda config --add channels conda-forge robostack
+conda config --set channel_priority strict</code></pre></figure>
+
+<h2 id="step-3-install-ros">Step 3: Install ROS</h2>
+
+<h3 id="1-install-ros-using-conda-or-mamba">1. Install ROS using conda or mamba</h3>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">conda install ros-noetic-desktop
+
+# or if you have mamba and want to use it
+mamba install ros-noetic-desktop</code></pre></figure>
+
+<h3 id="2-install-additional-packages-and-reload-environment">2. Install additional packages and reload environment</h3>
+
+<p>Install some compiler packages if you want to e.g. build packages in a catkin_ws - with conda:</p>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">conda install compilers cmake pkg-config make ninja catkin_tools
+
+# or with mamba:
+mamba install compilers cmake pkg-config make ninja catkin_tools</code></pre></figure>
+
+<p><strong>IMPORTANT Tip:</strong><br />
+You can install any ROS Noetic packages that are <a href="https://robostack.github.io/noetic.html">on this list</a> using:</p>
+
+<p><code class="language-plaintext highlighter-rouge">conda install ros-noetic-name-of-ROS-package-with-dashes</code><br />
+or with mamba:<br />
+<code class="language-plaintext highlighter-rouge">mamba install ros-noetic-name-of-ROS-package-with-dashes</code></p>
+
+<p><strong>On Windows, install Visual Studio command prompt via Conda:</strong></p>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">conda install vs2019_win-64</code></pre></figure>
+
+<h3 id="3-reload-environment">3. Reload environment</h3>
+
+<p>Reload environment to activate required scripts before running anything,<br />
+ On Windows, restart the Anaconda Prompt / Command Prompt.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">conda deactivate
+conda activate robostackenv</code></pre></figure>
+
+<h2 id="final-step-test-if-your-ros-install-works">Final Step: Test if your ROS install works</h2>
+
+<p>By now you have ROS installed in your conda environment. You can now create a ROS catkin workspace and add some packages with it, and run it to test to see if things work.</p>
+
+<h3 id="1-create-the-catkin-workspace">1. Create the catkin workspace</h3>
+
+<p>In your terminal, run the following commands to create the catkin workspace in your home directory, build, and initialize the workspace:</p>
+
+<p>Creates the workspace filestructure.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">mkdir ~/catkin_ws && mkdir ~/catkin_ws/src</code></pre></figure>
+
+<p>Always build when you add new packages, create a new workspace, or when you update C++ code that needs to be compiled.</p>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">cd ~/catkin_ws && catkin build</code></pre></figure>
+
+<p><strong>Important:</strong> Run this to activate your workspace on start and after running catkin build to allow ROS to find any newly built packages</p>
+
+<figure class="highlight"><pre><code class="language-plaintext" data-lang="plaintext">source ~/catkin_ws/devel/setup.bash # or setup.zsh if you use zsh</code></pre></figure>
+
+<h3 id="2-add-a-new-ros-package-in-your-workspace-and-build">2. Add a new ROS package in your workspace and build</h3>
+
+<p>If you have a ROS package in mind to add to your workspace, add it to your <code class="language-plaintext highlighter-rouge">src</code> folder in your catkin workspace, then build and source.</p>
+
+<p>If not, add this robot car test ROS package to your <code class="language-plaintext highlighter-rouge">src</code> folder, build, and source.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">cd ~/catkin_ws/src
+git clone https://github.com/raghavauppuluri13/robot_car_description.git
+catkin build && source ~/catkin_ws/devel/setup.bash # or setup.zsh</code></pre></figure>
+
+<h3 id="3-run-roslaunch">3. Run roslaunch</h3>
+
+<p>If everything so far suceeeds, roslaunch a launch file in your own ROS package to test to see if things work.</p>
+
+<p>If you added the <code class="language-plaintext highlighter-rouge">robot_car_description</code> package, run the following command:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">roslaunch robot_car_description display.launch</code></pre></figure>
+
+<p>You should get the following window:<br />
+<img src="/vault/Media/rvizdemo.png" /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>At this point, you should:<br />
+<strong>Have:</strong></p>
+
+<ul>
+<li>A working ROS install using conda/RoboStack</li>
+<li>A catkin workspace</li>
+</ul>
+
+<p><strong>Know how to:</strong></p>
+
+<ul>
+<li>Install packages using conda/mamba</li>
+<li>Create a catkin workspace</li>
+<li>Build a catkin workspace</li>
+<li>Add new packages to a catkin workspace</li>
+<li>Use roslaunch to run a ROS project</li>
+</ul>
+
+<p>If you weren't able to get any of these to work, please open up a GitHub issue <a href="https://github.com/raghavauppuluri13/website/issues">here</a>!</p>
+
+<p><span class="timestamp">Last update: 05/16/2021 18:18</span></p>
+</div>
+
+<h2 id="Backlinks">Backlinks</h2>
+<div class="backlinks">
+
+<ul>
+<li><a href="/vault/introduction-to-ros">Introduction to ROS</a></li>
+<li><a href="/vault/ros-tutorials">ROS Tutorials</a></li>
+</ul>
+
+</div>
+
+
+<!-- KaTeX -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz"
+  crossorigin="anonymous"></script>
+
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
+  crossorigin="anonymous"></script>
+
+<!-- Parsing single dollar signs -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+        {left: "\\[", right: "\\]", display: true},
+    {left: "$", right: "$", display: false},
+    {left: "\\(", right: "\\)", display: false}
+      ]
+  });
+  });
+</script>
