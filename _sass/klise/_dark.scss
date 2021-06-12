@@ -234,7 +234,7 @@ body[data-theme="dark"] {
     .solution:hover {
       color: $dark-text-link-blue-active;
     }
-  }  
+  }
 
   .search-article {
     input[type="search"] {
@@ -242,6 +242,12 @@ body[data-theme="dark"] {
       &::-webkit-input-placeholder {
         color: rgba(128,128,128,0.8);
       }
+    }
+  }
+
+  .author {
+    .author-avatar {
+      background-color: $black;
     }
   }
 }

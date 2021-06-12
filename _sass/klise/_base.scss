@@ -9,7 +9,7 @@
 
 .notransition {
   -webkit-transition: none;
-  -moz-transition: none; 
+  -moz-transition: none;
   -ms-transition: none;
   -o-transition: none;
   transition: none;
@@ -364,5 +364,11 @@ mark,
     td {
       border: 0;
     }
+  }
+}
+
+.author {
+  .author-avatar {
+    background-color: $white;
   }
 }
