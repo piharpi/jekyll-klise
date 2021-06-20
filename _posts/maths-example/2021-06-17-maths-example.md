@@ -24,4 +24,7 @@ y = y(x,t) &= A e^{i\theta} \\
 \end{align*}
 $$
 
+Inline maths can be written with the `\\(` and `\\)` characters, producing inline maths
+such as \\(\delta(t) \xrightarrow{\mathscr{F}} 1\\).
+
 The above is accomplished with thanks to [Alan Duan](https://alanduan.me/random/mathjax/) and [Zichen Vincent Zhang](https://webdocs.cs.ualberta.ca/~zichen2/blog/coding/setup/2019/02/17/how-to-add-mathjax-support-to-jekyll.html.).
