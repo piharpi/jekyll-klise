@@ -175,12 +175,12 @@ ol {
 ul,
 ol {
   margin-top: 0;
-  margin-left: $spacing-full;
 }
 
 li {
   padding-bottom: 1px;
   padding-top: 1px;
+  margin-left: $spacing-full;
 
   &:before {
     color: $black;
