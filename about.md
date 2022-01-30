@@ -1,18 +1,15 @@
 ---
-title: Colophon
+title: about me
 permalink: /about/
 layout: page
-excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in Jogjakarta. This blog for documentation about my programming journey, running on jekyll, hosting on netlify and using my own simple theme.
+excerpt: Robotics graduate, currently focused in composites. Trying to improve efficiency using a code. Set up this website to document and share some findings.
 comments: false
 ---
 
-He's a student from Banyuwangi, living in Jogjakarta. the blog for documentation about his programming 🎒 journey, running on jekyll, hosting on [now.sh](http://now.sh) and using his own theme, he name it <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">klisé</a>, he also loves to learning web technology; but he often forgot, that a reason why him doing the writing.
+Originally from Warsaw/Poland, currently based in the Netherlands. Mechanical engineer with background of mechatronics/robotics, but became a composite materials enthusiast after Erasmus+ in Dresden/Germany.
+Trying to improve my efficiency with code, and going to document some of it here.
 
-If you have a question about him or else, just send a letter to him.
-
-You can [report](http://github.com/piharpi/jekyll-klise/issues/new) if there is an broken link(s) or somethings else.
-
-**may u needs ✨**
-
-- {{ site.author.email }}
-- github.com/{{ site.author.github }}
+**✨ places to visit ✨**
+* <a href="mailto:przemyslaw.furman@yahoo.com">@ mail</a><br>
+* <a href="https://github.com/furmanp" target="_blank" rel="noopener">@github</a><br>
+* <a href="https://www.linkedin.com/in/przemyslawfurman/" target="_blank" rel="noopener">@linkedin</a><br>

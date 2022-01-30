@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2020-08-29 09:29:20 +0700
-categories: jekyll update
+title:  "how to document your visual basic project."
+date:   2022-01-01 00:00:00 +0000
+categories: general
+tag: visual basic, documentation
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
