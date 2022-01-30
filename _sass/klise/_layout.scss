@@ -190,8 +190,8 @@
   }
 
   .author-avatar {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     border-radius: 100%;
     user-select: none;
     background-color: $black;
@@ -212,6 +212,7 @@
     opacity: 0.9;
     max-width: 393px;
     line-height: 1.688;
+    text-align: justify;
   }
 }
 
