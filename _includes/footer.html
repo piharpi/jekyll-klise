@@ -18,12 +18,20 @@
   </small>
 </footer>
 <script src="/assets/js/main.js" defer="defer"></script>
-
-{%- if page.google_analytics -%}
-  <script src="/assets/js/galite.js"></script>
+{%- if site.google_analytics -%}
+  <!-- Google tag (gtag.js) -->
+  <script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"
+  ></script>
   <script>
-    var galite = galite || {};
-    galite.UA = "{{ site.google_analytics }}";
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "{{ site.google_analytics }}");
   </script>
 {%- endif -%}
 {%- if page.url == '/archive/' -%}
