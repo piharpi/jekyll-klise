@@ -161,4 +161,15 @@
   <meta name="theme-color" content="#2c2c2c" />
 
   <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!-- for mathjax support -->
+  {% if page.usemathjax %}
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {% endif %}
+    
 </head>
