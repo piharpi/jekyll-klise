@@ -233,6 +233,11 @@ h6 > a {
 a {
   color: inherit;
   text-decoration-color: $smoke;
+  // transitions
+  transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
 
   &:hover {
     color: $text-link-blue;
