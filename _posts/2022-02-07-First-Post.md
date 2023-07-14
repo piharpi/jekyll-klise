@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Post!
+title: First Post
 date: 2022-02-07 12:18:00
 categories: [Blog]
 thumbnail: "assets/images/pattern.webp"
