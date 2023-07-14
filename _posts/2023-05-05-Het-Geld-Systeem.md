@@ -14,7 +14,7 @@ Ja, het geld systeem is, door het slecht omgaan met het systeem, helaas kapot aa
 Je kunt ook duidelijk aan de goudprijs, dat over het algemeen gekoppeld wordt aan het vertrouwen in [fiat geld](https://nl.wikipedia.org/wiki/Fiduciair_geld){:target="_blank"}.
 Dit kun je hieronder terugzien:
 
-![De goudprijs vanaf juli 2021 tot en met mei 2023](/assets/images/Goudprijs-tot-maart.webp) 
+![De goudprijs vanaf juli 2021 tot en met mei 2023](assets/images/Goudprijs-tot-maart.webp) 
 
 # Het omvallen van de banken in America
 
