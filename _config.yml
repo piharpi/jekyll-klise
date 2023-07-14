@@ -11,7 +11,7 @@ mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
-  name: Jekyll Klisé # author name
+  name: Persoonklijke Blog # author name
   bio: >- # tell to the world
     Gemaakt en ontworpen om mijn gedachtes te kunnen uiten.
     Je kunt direct contact met me opnemen via <a href='mailto:persoonlijkeblog@privemail.xyz' target='_blank'>mail</a>. 
