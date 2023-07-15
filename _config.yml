@@ -16,7 +16,8 @@ author:
     Gemaakt en ontworpen om mijn gedachtes te kunnen uiten.
     Je kunt direct contact met me opnemen via <a href='mailto:persoonlijkeblog@privemail.xyz' style="color: #00FF5D" target='_blank'>mail</a>. 
     Foreigners, check  <a href='https://www-persoonlijkeblog-nl.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp' style="color: #FF0000" target='_blank'>here for translation 🏴󠁧󠁢󠁥󠁮󠁧󠁿</a>
-    <button name="button" onclick="http://www.google.com">Click me</button>
+    <button name="button" onclick="https://www-persoonlijkeblog-nl.translate.goog/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=nl&_x_tr_pto=wapp">Click me</button>
+    
   #username: username # general username
   #github: github_username # github username
   #twitter: twitter_username # twitter username
