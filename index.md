@@ -1,3 +1,5 @@
+<script defer src="/_vercel/insights/script.js"></script>
+
 ---
 layout: home
 ---
