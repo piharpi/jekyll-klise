@@ -19,4 +19,4 @@ Mark Rutte, die al lang de leiding heeft, besluit zijn baan op te zeggen. Dat ko
 
 <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/IHIABv8XRXv7aliwmO" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/BigBrotherAU-bbau-bigbrotherau-bbau3-IHIABv8XRXv7aliwmO">via GIPHY</a></p>
 
-Ze zien na het hele Covid-19 debakel dat mensen dit niet pikken. Ze hebben, voor ze weggingen, nog wel even snel een aantal wetten doorgevoerd, zoals de wet waardoor ze de covid restricties ten alle tijden kunnen invoeren, het niet meer zomaar mogen verkopen van je huis.
+Ze zien na het hele Covid-19 debakel dat mensen dit niet pikken. Ze hebben, voor ze weggingen, nog wel even snel een aantal wetten doorgevoerd, zoals de wet waardoor ze de covid restricties ten alle tijden kunnen invoeren, het niet meer zomaar mogen verkopen van je huis..
