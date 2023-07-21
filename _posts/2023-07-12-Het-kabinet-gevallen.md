@@ -24,4 +24,4 @@ Ze zien na het hele Covid-19 debakel dat mensen dit niet pikken. Ze hebben, voor
 Doordat ze de euro ook al gesloopt hebben, waar we nu in de supermarkten de gevolgen van terugzien, zijn ze snel allemaal opgestapt, zodat de volgende ploeg het over kan nemen.
 
 # Frans Timmermans
-![](assets/images/FransTimmermans.webp)
+![](/assets/images/FransTimmermans.webp)
