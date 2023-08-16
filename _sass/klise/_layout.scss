@@ -252,6 +252,8 @@
     font-size: $base-font-size;
     font-weight: normal;
     letter-spacing: 0.1px;
+    display: flex;
+    align-items: center;
 
     a {
       color: $text-base-color;
@@ -260,6 +262,18 @@
       &focus {
         color: $black;
       }
+    }
+    .tags {
+      display: inline-block;
+      padding: 0 10px 0px 10px;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      margin-left: 5px;
+      font-size: 12px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .tags:hover {
+      background-color: #e5e5e5;
     }
   }
 }
@@ -325,7 +339,6 @@
     color: $text-link-blue-active;
   }
 }
-
 
 .search-article {
   position: relative;
