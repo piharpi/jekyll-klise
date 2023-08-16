@@ -171,6 +171,20 @@ body[data-theme="dark"] {
           color: $dark-white;
         }
       }
+      .tags {
+        display: inline-block;
+        padding: 0 10px 0px 10px;
+        background-color: #393939;
+        color: #eaeaea;
+        border-radius: 8px;
+        margin-left: 5px;
+        font-size: 12px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .tags:hover {
+        background-color: #e5e5e5;
+        color: black;
+      }
     }
   }
 
@@ -234,13 +248,13 @@ body[data-theme="dark"] {
     .solution:hover {
       color: $dark-text-link-blue-active;
     }
-  }  
+  }
 
   .search-article {
     input[type="search"] {
       color: $dark-text-base-color;
       &::-webkit-input-placeholder {
-        color: rgba(128,128,128,0.8);
+        color: rgba(128, 128, 128, 0.8);
       }
     }
   }
