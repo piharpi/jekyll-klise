@@ -39,4 +39,4 @@ Frans Timmermans himself heeft eerder aangegeven alleen naar Den Haag te willen 
 <script type="text/javascript">var ifrm_advanced_iframe = document.getElementById("advanced_iframe");var hiddenTabsDoneadvanced_iframe = false;
 function resizeCallbackadvanced_iframe() {}</script><script type="text/javascript"></script>Frans Timmermans weet waarom mensen de politiek ingaan en spreekt zich hier zelfs over uit. Hieronder zie je een tweet van onze Frans uit 2017. Je kunt op de afbeelding klikken om een opgeslagen versie van de tweet te zien:
 
-<figure class="wp-block-image size-large">[![](https://persoonlijkeblog.nl/wp-content/uploads/2023/08/F2lxJzBWcAAzL1d-1024x586.jpeg)](https://archive.ph/3auiU)</figure>
+<figure class="wp-block-image size-large">[!](TheDutchSmoke/Persoonlijkeblog/assets/images/Timmermans.jpeg)</figure>
