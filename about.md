@@ -1,18 +1,21 @@
 ---
-title: Colophon
+title: Madhur Wadhwa
 permalink: /about/
 layout: page
-excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in Jogjakarta. This blog for documentation about my programming journey, running on jekyll, hosting on netlify and using my own simple theme.
+excerpt: A simple blog to document my thoughts.
 comments: false
 ---
 
-He's a student from Banyuwangi, living in Jogjakarta. the blog for documentation about his programming 🎒 journey, running on jekyll, hosting on [now.sh](http://now.sh) and using his own theme, he name it <a href="https://github.com/piharpi/jekyll-klise" target="_blank" rel="noopener">klisé</a>, he also loves to learning web technology; but he often forgot, that a reason why him doing the writing.
+Hi, I am Madhur, a Senior Software Engineer at Myntra. I mostly do back-end development and a teeny tiny bit of front-end. I love to start learning new things (well, in some cases yes, just to start). I mostly work with Java for back-end development and with Python for scripting.
 
-If you have a question about him or else, just send a letter to him.
+Have dabbled in a couple of things in the past, Editing, Illustration, Graphic Design, Video Editing, Digital Painting, Piano, Front End Dev, Reading and of course currently obessed with certain parts of back-end dev.
 
-You can [report](http://github.com/piharpi/jekyll-klise/issues/new) if there is an broken link(s) or somethings else.
+
+Working to improve inventory at [Myntra](myntra.com). Trying to build small things, one of them being [UtliTea.in](utilitea.in) ☕
+
 
 **may u needs ✨**
 
-- {{ site.author.email }}
-- github.com/{{ site.author.github }}
+- [Email](mailto:madhurwadhwa18@gmail.com)
+- [Github](https://github.com/madhurw7)
+- [Twitter](twitter.com/madhurw7)
