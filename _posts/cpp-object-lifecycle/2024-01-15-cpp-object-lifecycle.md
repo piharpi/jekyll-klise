@@ -1,10 +1,11 @@
 ---
 title: The C++ Object Lifecycle
-date: 2024-01-15 12:00:00 +00:00
-modified: 2024-01-15 12:00:00 +00:00
-tags: [c++, object-oriented-programming]
+date: 2023-01-15 12:00:00 +00:00
+modified: 2023-01-15 12:00:00 +00:00
+tags: [c++]
 description: An analysis of the C++ Object Lifecycle 
 image: "/cpp-object-lifecycle/omen.jpg"
+image_caption: Omen
 ---
 
 Most Discussions around RAII don't discuss the implicit contracts and relationships with. These contracts help enable RAII.
@@ -12,7 +13,7 @@ Most Discussions around RAII don't discuss the implicit contracts and relationsh
 This is typically required when implementing your container types, working with custom memory allocators, deferred object construction (when implementing types for structured error-handling like `Result<T, E>` and `Option<T>`). These are typically termed as 'unsafe' operations.
 
 
-**NOTE**: Most projects don't use exceptions nor have I had to work on projects that use them, so we will not be discussing about them or the corner cases, unnecessary complexities, code path explosions, and limitations they introduce.
+**NOTE**: Most projects don't use exceptions, so we will not be discussing about them or the corner cases, unnecessary complexities, code path explosions, and limitations they introduce.
 
 
 The lifecycle of a C++ Object is illustrated as:
@@ -119,11 +120,9 @@ Reading an uninitialized/non-constructed object is Undefined Behaviour and catas
 
 Placement-new serves some important purposes:
 - initializing virtual function dispatch table for virtual (base and inherited) classes. (reintepret_cast + trivial construction (i.e. memset or memcpy) is not enough). i.e.
-```cpp
 
 
 
-```
 
 ###### Example
 
@@ -183,7 +182,6 @@ For objects that have no special constructors, virtual functions, or members tha
 <a href="http://www.youtube.com/watch?v=tc4ROCJYbm0&t=70" target="_blank" rel="noopener">Dulu</a> Sebelum adanya <abbr title="Graphical User Interface">GUI</abbr> cara user berinteraksi dengan komputer menggunakan <abbr title="Command Line Interface">CLI</abbr> yaitu mengetik baris perintah pada sebuah antarmuka dalam bentuk baris teks seperti 👇.
 
 <figure>
-<img src="/apa-itu-shell/terminal_nginx.gif" alt="installing nginx in ubuntu">
 <figcaption>Fig 1. Terminal emulator, instalasi package dan check service.</figcaption>
 </figure>
 
@@ -192,7 +190,6 @@ Jika kamu pernah menggunakan unix/linux mungkin pernah menggunakan program diata
 User<sup id="user">[[1]](#user-ref)</sup> tidak bisa secara langsung berkomunikasi dengan sebuah hardware komputer, maka dari itu kita membutuhkan sebuah sistem operasi; **Kernel** adalah program yang merupakan inti utama dari sistem operasi komputer.
 
 <figure>
-<img src="/apa-itu-shell/kernel.png" alt="kernel central of operating system">
 <figcaption>Fig 2. bagan kernel.</figcaption>
 </figure>
 
@@ -201,7 +198,6 @@ Kernel memfasilitasi interaksi antara komponen perangkat keras dan perangkat lun
 Ketika kita menginputkan suatu perintah pada terminal emulator, kernel tidak langsung mengerti perintah yang kita ketik, kita membutuhkan suatu interface sebagai perantara menuju kernel yaitu **Shell**.
 
 <figure>
-<img src="/apa-itu-shell/shell.png" alt="shell">
 <figcaption>Fig 3. bagan komunikasi shell.</figcaption>
 </figure>
 
@@ -227,14 +223,12 @@ $ (dollar sign)   # sh, ksh, bash
 Shell prompt adalah tempat dimana kita menuliskan suatu perintah, berikut adalah terminologinya ini membantu, jika kamu ingin mengetahui bagian-bagianya.
 
 <figure>
-<img src="/apa-itu-shell/term_shell_prompt.png" alt="shell">
 <figcaption>Fig 4. bagian-bagin dari shell prompt.</figcaption>
 </figure>
 
 Dibawah ini salah satu contoh perintah sederhana untuk menampilkan sebuah arsitektur CPU komputer yang sedang saya gunakan.
 
 <figure>
-<img src="/apa-itu-shell/terminal_lscpu.gif" alt="installing nginx in ubuntu">
 <figcaption>Fig 5. menampilkan informasi tentang arsitektur CPU.</figcaption>
 </figure>
 
@@ -243,7 +237,6 @@ Dari perintah yang contohkan, ketika user mengetikan suatu inputan perintah di t
 Shell mempunyai beberapa macam dan turunan, berikut yang paling umum.
 
 <figure>
-<img src="/apa-itu-shell/shell_evolution.png" alt="shell evolution">
 <figcaption>Fig 6. evaluasi shell dari tahun ke tahun.</figcaption>
 </figure>
 
