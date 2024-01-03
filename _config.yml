@@ -4,12 +4,15 @@ description: >- # site description
   Basit's Developer Blog
 lang: en-US # default lang
 timezone: Europe/London # set your timezone
+timezone: Europe/London # set your timezone
 image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
+repo: https://github.com/lamarrr/lamarrr.github.io # site repo [optional]
 repo: https://github.com/lamarrr/lamarrr.github.io # site repo [optional]
 mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
+  name: Basit Ayantunde # author name
   name: Basit Ayantunde # author name
   bio: >- # tell to the world
     Systems Software Engineer at CodeThink, ISO C++ WG21 Member, and Open-Source Contributor
