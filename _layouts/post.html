@@ -3,7 +3,7 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
 
 {% include header.html %}
 
@@ -22,9 +22,9 @@ layout: compress
         localStorage.setItem("theme", data);
       }
     };
- 
+
     initTheme(localStorage.getItem("theme"));
-    
+
     setTimeout(() => body.classList.remove("notransition"), 75);
   </script>
 
@@ -39,8 +39,8 @@ layout: compress
             {% assign tags = page.tags %}
             <span itemprop="keywords">
               {% for tag in tags %}
-              <a class="tag"
-                href="/tags/#{{tag | downcase | slugify}}">{{tag | upcase }}</a>{% unless forloop.last %},{% endunless %}
+              <a class="tag" href="/tags/#{{tag | downcase | slugify}}">{{tag | upcase }}</a>{% unless forloop.last
+              %},{% endunless %}
               {% endfor %}
             </span>
           </div>
@@ -58,7 +58,15 @@ layout: compress
               {{ page.date | date: "%b %d, %Y" }}
             </time>
             <span hidden itemprop="publisher" itemtype="Person">{{ site.author.name }}</span>
-            <span hidden itemprop="image">{{ page.image }}</span>
+            <br />
+            <br />
+            <figure>
+              <span itemprop="image"><img src="{{ page.image }}" /></span>
+              {% if page.image_caption %}
+              <figcaption>{{page.image_caption}}</figcaption>
+              {% endif %}
+            </figure>
+
             <span hidden itemprop="mainEntityOfPage">{{ page.excerpt }}</span>
           </div>
           {% endif %}
@@ -67,24 +75,24 @@ layout: compress
         <div class="page-content" itemprop="articleBody">
           {% include anchor_headings.html html=content anchorClass="anchor-head" beforeHeading=true h_min=1 h_max=4 %}
           {% if page.tweet %}
-          <p>Comments this article on 
+          <p>Comments this article on
             <a href="https://twitter.com/{{site.twitter}}/status/{{page.tweet}}">Twitter</a>.
           </p>
           {% endif %}
         </div>
       </article>
-    
+
       {% if page.comments %}
-        {% include comments.html %}
+      {% include comments.html %}
       {% endif %}
 
     </main>
 
     {% if page.modified %}
-      <small class="post-updated-at">updated_at {{page.modified | date: "%d-%m-%Y"}}</small>
+    <small class="post-updated-at">updated_at {{page.modified | date: "%d-%m-%Y"}}</small>
     {% endif %}
     {% if page.next or page.previous %}
-      {% include navigation.html %}
+    {% include navigation.html %}
     {% endif %}
 
     {% include footer.html %}
