@@ -27,10 +27,6 @@ For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now
 
 ![Lighthouse Result](./lighthouse.png)
 
-## Backlogs
-
-- [ ] Transform class selector to BEM metodology.
-
 ## Installation
 
 Requires **Ruby >= 3.0** and **Jekyll ~> 4.4**.
