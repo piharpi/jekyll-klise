@@ -5,20 +5,20 @@ layout: page
 excerpt: Sorted article by tags.
 ---
 
-{%- assign sorted_tags = site.tags | sort_natural -%}
+{%- assign sorted_tags = site.tags | sort -%}
 
 <div class="archive-tags">
   <a class="tag-item" href="#">all</a>
   {%- for tag in sorted_tags -%}
-    {%- assign name = tag | first -%}
+    {%- capture name -%}{{ tag[0] }}{%- endcapture -%}
     <a class="tag-item" href="#{{ name | slugify }}">{{ name }}</a>
   {%- endfor -%}
 </div>
 
 {%- for tag in sorted_tags -%}
-  {%- assign name = tag | first -%}
+  {%- capture name -%}{{ tag[0] }}{%- endcapture -%}
   <h2 id="{{ name | slugify }}">{{ name | upcase }}</h2>
-  {%- for post in tag.last -%}
+  {%- for post in tag[1] -%}
     <article class="post-item">
       <span class="post-item-date">{{ post.date | date: "%b %d, %Y" }}</span>
       <h3 class="post-item-title">
