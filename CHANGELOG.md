@@ -10,6 +10,11 @@ All notable changes to this project are documented in this file.
 - GitHub Actions CI that builds the site on every push and pull request.
 - `webrick` as a runtime dependency so the theme works out of the box on
   Ruby 3+ (#69).
+- `package.json` pinning Node.js to `24.x` for Vercel (its build image no
+  longer supports the previously detected Node 16.x).
+
+### Removed
+- Legacy `now.json`, migrated to `vercel.json`.
 
 ### Changed
 - Bump Jekyll `~> 4.1` → `~> 4.4` and `jekyll-feed` `~> 0.13` → `~> 0.18`.
