@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "description": "Deploy configuration for the Klisé Jekyll theme. Pins the Node.js version used by Vercel's build image.",
+  "engines": {
+    "node": "24.x"
+  }
+}
