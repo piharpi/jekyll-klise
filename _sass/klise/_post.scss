@@ -191,6 +191,51 @@
   }
 }
 
+// Table of contents
+.toc {
+  margin-top: $spacing-full;
+  padding: 15px 20px;
+  border: 1px solid $light;
+  border-radius: 4px;
+
+  .toc-title {
+    margin: 0 0 8px;
+    color: $gray;
+    font-weight: $bold-weight;
+    font-size: $small-font-size;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .toc-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .toc-item {
+    line-height: 1.6;
+
+    &::before {
+      content: none;
+    }
+
+    a {
+      color: $text-base-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $text-link-blue;
+      }
+    }
+  }
+
+  .toc-h3 {
+    padding-left: 18px;
+    font-size: $small-font-size;
+  }
+}
+
 .post-nav {
   display: flex;
   position: relative;

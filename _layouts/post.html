@@ -66,6 +66,10 @@ layout: compress
           {% endif %}
         </header>
 
+        {% if page.toc %}
+          {% include toc.html html=content %}
+        {% endif %}
+
         <div class="page-content" itemprop="articleBody">
           {% include anchor_headings.html html=content anchorClass="anchor-head" beforeHeading=true h_min=1 h_max=4 %}
           {% if page.tweet %}
