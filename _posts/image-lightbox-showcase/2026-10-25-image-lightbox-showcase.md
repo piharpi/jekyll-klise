@@ -51,11 +51,14 @@ Images smaller than the viewport are centered and shown at their natural size.
 
 ## 6. Several images in a row
 
-Each one opens independently.
+Wrapped in `<div class="gallery">` for a neat, equal-height responsive row that
+wraps on small screens. Each one still opens independently in the lightbox.
 
-![First](/image-lightbox-showcase/small.svg)
-![Second](/image-lightbox-showcase/wide.svg)
-![Third](/image-lightbox-showcase/square.svg)
+<div class="gallery">
+  <img src="/image-lightbox-showcase/square.svg" alt="Gallery image one">
+  <img src="/image-lightbox-showcase/wide.svg" alt="Gallery image two">
+  <img src="/image-lightbox-showcase/small.svg" alt="Gallery image three">
+</div>
 
 ## 7. Inline image inside a paragraph
 
