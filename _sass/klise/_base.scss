@@ -19,6 +19,16 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   width: 100%;
+  // Give the canvas its own background. Safari does not always propagate
+  // the body background to the canvas when the body has `overflow-x:
+  // hidden`, which left the area below short pages blank (#45).
+  background-color: $white;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: $dark-black;
+  }
 }
 
 body,
