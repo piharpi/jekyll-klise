@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name     = "klise"
-  spec.version  = "1.0.1"
+  spec.version  = "1.1.0"
   spec.authors  = ["Mahendrata Harpi"]
   spec.email    = ["justharpi@gmail.com"]
 
@@ -15,11 +15,12 @@ Gem::Specification.new do |spec|
     f.match(%r{^(_(includes|layouts|sass)/|(assets|LICENSE|README)((\.(txt|md|markdown|yml)|$)))}i)
   end
 
-  spec.add_runtime_dependency "jekyll", "~> 4.1"
-  spec.add_runtime_dependency 'jekyll-feed', '~> 0.13'
+  spec.add_runtime_dependency "jekyll", "~> 4.4"
+  spec.add_runtime_dependency 'jekyll-feed', '~> 0.18'
   spec.add_runtime_dependency 'jekyll-sitemap', '~> 1.4'
-  spec.add_runtime_dependency 'jekyll-compose', '~> 0.12.0'
+  spec.add_runtime_dependency 'jekyll-compose', '~> 0.12'
   spec.add_runtime_dependency 'jekyll-postfiles', '~> 3.1'
+  spec.add_runtime_dependency "webrick", "~> 1.8"
 
   spec.add_development_dependency "bundler", "~> 2.1"
 end
