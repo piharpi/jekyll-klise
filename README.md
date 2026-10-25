@@ -5,7 +5,7 @@ For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now
 
 ## Features
 
-- [x] Light & Dark Mode support :waxing_crescent_moon:
+- [x] Light & Dark Mode support, follows OS preference by default :waxing_crescent_moon:
 - [x] Customizable (using `.scss`)
 - [x] Responsive (desktop, tab and mobile)
 - [x] Mobile First Design
@@ -30,6 +30,8 @@ For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now
 - [ ] Transform class selector to BEM metodology.
 
 ## Installation
+
+Requires **Ruby >= 3.0** and **Jekyll ~> 4.4**.
 
 Run local server:
 
