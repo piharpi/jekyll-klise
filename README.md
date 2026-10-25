@@ -11,6 +11,7 @@ For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now
 - [x] RTL / LTR text direction support
 - [x] Mobile First Design
 - [x] SEO Optimized
+- [x] schema.org structured data (JSON-LD)
 - [x] Images of post Organized ([`jekyll-postfiles`](https://github.com/nhoizey/jekyll-postfiles))
 - [x] Generate Sitemap ([`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap))
 - [x] RSS Feed ([`jekyll-feed`](https://github.com/jekyll/jekyll-feed))
@@ -28,7 +29,6 @@ For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now
 ## Backlogs
 
 - [ ] Intergrated with PhotoSwipe.
-- [x] Add schema.org meta information.
 - [ ] Transform class selector to BEM metodology.
 
 ## Installation
