@@ -27,7 +27,7 @@ For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now
 ## Backlogs
 
 - [ ] Intergrated with PhotoSwipe.
-- [ ] Add schema.org meta information.
+- [x] Add schema.org meta information.
 - [ ] Transform class selector to BEM metodology.
 
 ## Installation
