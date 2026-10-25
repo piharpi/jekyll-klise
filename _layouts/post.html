@@ -11,7 +11,6 @@ layout: compress
 
   <script>
     const body = document.body;
-    const data = body.getAttribute("data-theme");
 
     const initTheme = (state) => {
       if (state === "dark") {
@@ -19,7 +18,10 @@ layout: compress
       } else if (state === "light") {
         body.removeAttribute("data-theme");
       } else {
-        localStorage.setItem("theme", data);
+        // No stored preference yet: follow the OS color scheme.
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? body.setAttribute("data-theme", "dark")
+          : body.removeAttribute("data-theme");
       }
     };
  
