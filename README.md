@@ -13,6 +13,7 @@ For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now
 - [x] SEO Optimized
 - [x] schema.org structured data (JSON-LD)
 - [x] Images of post Organized ([`jekyll-postfiles`](https://github.com/nhoizey/jekyll-postfiles))
+- [x] Image lightbox (click an image in a post to zoom, no dependencies)
 - [x] Generate Sitemap ([`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap))
 - [x] RSS Feed ([`jekyll-feed`](https://github.com/jekyll/jekyll-feed))
 - [x] Syntax Highlighter ([`rouge`](https://github.com/rouge-ruby/rouge))
@@ -28,7 +29,6 @@ For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now
 
 ## Backlogs
 
-- [ ] Intergrated with PhotoSwipe.
 - [ ] Transform class selector to BEM metodology.
 
 ## Installation
