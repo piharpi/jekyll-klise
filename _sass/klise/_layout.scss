@@ -378,3 +378,41 @@
     background-color: rgba(128, 128, 128, 0.1);
   }
 }
+
+// RTL adjustments: floats and relative offsets do not mirror on their
+// own, so flip the pieces that are positioned by physical side.
+[dir="rtl"] {
+  .menu {
+    a#mode {
+      float: right;
+      left: auto;
+      right: 8px;
+    }
+
+    .trigger {
+      float: left;
+    }
+
+    .menu-link:not(:last-child) {
+      margin-right: 0;
+      margin-left: 5px;
+    }
+
+    @include media-query($on-mobile) {
+      a#mode {
+        left: auto;
+        right: 10px;
+      }
+
+      .menu-icon {
+        right: auto;
+        left: 0;
+      }
+    }
+  }
+
+  .post-item .post-item-date {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+}

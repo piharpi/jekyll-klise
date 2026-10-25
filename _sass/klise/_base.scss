@@ -148,7 +148,7 @@ ul {
     top: -1px;
     width: 1.2em;
     position: relative;
-    margin-left: -1.3em;
+    margin-inline-start: -1.3em;
     font-weight: 700;
   }
 }
@@ -163,10 +163,9 @@ ol {
       content: counter(li);
       display: inline-block;
       width: 1em;
-      margin-right: 0.5em;
-      margin-left: -1.6em;
-      text-align: right;
-      direction: rtl;
+      margin-inline-end: 0.5em;
+      margin-inline-start: -1.6em;
+      text-align: end;
       font-weight: $bold-weight;
       font-size: $small-font-size;
     }
@@ -176,7 +175,7 @@ ol {
 ul,
 ol {
   margin-top: 0;
-  margin-left: $spacing-full;
+  margin-inline-start: $spacing-full;
 }
 
 li {

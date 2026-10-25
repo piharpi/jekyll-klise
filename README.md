@@ -8,6 +8,7 @@ For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now
 - [x] Light & Dark Mode support, follows OS preference by default :waxing_crescent_moon:
 - [x] Customizable (using `.scss`)
 - [x] Responsive (desktop, tab and mobile)
+- [x] RTL / LTR text direction support
 - [x] Mobile First Design
 - [x] SEO Optimized
 - [x] Images of post Organized ([`jekyll-postfiles`](https://github.com/nhoizey/jekyll-postfiles))
@@ -58,6 +59,18 @@ title: My post
 toc: true
 ---
 ```
+
+## Text direction (RTL)
+
+Set the site-wide direction in `_config.yml`:
+
+```yaml
+direction: rtl # "ltr" (default) | "rtl"
+```
+
+You can override it per page/post in the front matter with `direction: rtl`.
+Post content also resolves its direction per paragraph, so an LTR site can
+host individual RTL posts (and vice versa) without extra markup.
 
 ## Limitation
 
