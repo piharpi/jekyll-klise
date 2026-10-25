@@ -1,0 +1,56 @@
+{%- comment -%}
+  schema.org structured data (JSON-LD).
+  Emits BlogPosting for posts and WebSite for every other page.
+{%- endcomment -%}
+{%- capture description -%}
+  {{ page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 200 }}
+{%- endcapture -%}
+{%- assign description = description | strip -%}
+{%- if page.image -%}
+  {%- assign page_image = page.image | absolute_url -%}
+{%- else -%}
+  {%- assign page_image = site.image | absolute_url -%}
+{%- endif -%}
+
+<script type="application/ld+json">
+{%- if page.layout == 'post' -%}
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ page.url | absolute_url | jsonify }}
+  },
+  "headline": {{ page.title | jsonify }},
+  "description": {{ description | jsonify }},
+  "image": {{ page_image | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.modified | default: page.date | date_to_xmlschema | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }},
+    "url": {{ site.url | append: site.baseurl | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.author.name | jsonify }},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ site.author.avatar | default: site.image | absolute_url | jsonify }}
+    }
+  }
+}
+{%- else -%}
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.title | jsonify }},
+  "url": {{ site.url | append: site.baseurl | jsonify }},
+  "description": {{ description | jsonify }},
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }}
+  }
+}
+{%- endif -%}
+</script>
