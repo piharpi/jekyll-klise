@@ -70,9 +70,13 @@ Authored directly as HTML rather than Markdown — behaves the same.
 
 <img src="/image-lightbox-showcase/wide.svg" alt="A grey placeholder rendered from raw HTML">
 
-## 9. Image inside a list
+## 9. Images inside a list
 
-- A list item with an image: ![placeholder in a list](/image-lightbox-showcase/small.svg)
+Images in list items are shrunk to small, aligned thumbnails so the list stays
+tidy. Each thumbnail is still zoomable.
+
+- ![Thumbnail](/image-lightbox-showcase/small.svg) A list item that starts with a small thumbnail.
+- ![Thumbnail](/image-lightbox-showcase/wide.svg) Another item, with a wider thumbnail.
 - A plain list item for comparison.
 
 ## 10. A linked image inside a figure
