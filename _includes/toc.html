@@ -1,0 +1,34 @@
+{% comment %}
+  Builds a table of contents from the h2/h3 headings in the given HTML.
+
+  Usage:
+    {% include toc.html html=content %}
+
+  Optional parameters:
+    * title (string) : "Table of Contents" - heading shown above the list
+{% endcomment %}
+
+{%- assign toc_nodes = include.html | split: '<h' -%}
+{%- capture toc_items -%}
+  {%- for node in toc_nodes -%}
+    {%- assign level = node | slice: 0, 1 -%}
+    {%- if level == '2' or level == '3' -%}
+      {%- assign heading = node | split: '</h' | first -%}
+      {%- if heading contains 'id="' -%}
+        {%- assign id = heading | split: 'id="' | last | split: '"' | first -%}
+        {%- assign text = heading | split: '>' | last | strip_html | strip -%}
+        <li class="toc-item toc-h{{ level }}"><a href="#{{ id }}">{{ text }}</a></li>
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign toc_items = toc_items | strip -%}
+
+{%- if toc_items != '' -%}
+<nav class="toc" aria-label="Table of contents">
+  <p class="toc-title">{{ include.title | default: 'Table of Contents' }}</p>
+  <ul class="toc-list">
+    {{ toc_items }}
+  </ul>
+</nav>
+{%- endif -%}

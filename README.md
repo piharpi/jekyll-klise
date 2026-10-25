@@ -14,6 +14,7 @@ For demo <a href="https://klise.now.sh" target="_blank" rel="noopener">klise.now
 - [x] Generate Sitemap ([`jekyll-sitemap`](https://github.com/jekyll/jekyll-sitemap))
 - [x] RSS Feed ([`jekyll-feed`](https://github.com/jekyll/jekyll-feed))
 - [x] Syntax Highlighter ([`rouge`](https://github.com/rouge-ruby/rouge))
+- [x] Table of contents, opt-in per post with `toc: true`
 - [x] Next & Previous Post
 - [x] Comment layout, enable in frontmatter if you wish
 - [x] Google analytics
@@ -45,6 +46,18 @@ $ bundle exec jekyll serve
 Navigate to `localhost:4000`. You're Welcome, Fork and be Stargazer.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/piharpi/jekyll-klise) [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/piharpi/jekyll-klise) [![Deploy to Azure button](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/?feature.customportal=false&WT.mc_id=javascript-0000-jopapa#create/Microsoft.StaticApp)
+
+## Table of contents
+
+Add `toc: true` to a post's front matter to render an automatic table of
+contents (built from its `h2`/`h3` headings) above the article:
+
+```yaml
+---
+title: My post
+toc: true
+---
+```
 
 ## Limitation
 
